@@ -1,13 +1,17 @@
-l1. **Cd**
-3. **touch**
-4. **Chmod** 
-5. **mkdir**
-6. **ls**
-7. **rm**
-8. **cat**
-9. **less**
-10. **mv**
-11. **cp**
+---
+layout:     post 
+title:      "10 Basic Linux Commands That You Need To Know"
+subtitle:   "Linux Based"
+date:       2022-09-03
+author:     "Mishal Abdullah"
+image : "img/black.png"
+URL: "commandline"
+tags:
+  - Terminal
+  - Linux
+  - Keyboard
+---
+
 
 # 10 Basic Linux Commands That You Need To Know
 ## 1. cd 
