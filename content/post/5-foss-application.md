@@ -64,3 +64,5 @@ With help of spotiflyer you can download songs, albums and playlists from Spotif
 Spotiflyer is available for Sndroid,Windows, Linux and MacOs.
 ![thumbnail](/img/Project/spotify.png)
  [Github](https://github.com/Shabinder/SpotiFlyer)[Fdroid](https://f-droid.org/en/packages/com.shabinder.spotiflyer/)
+
+> If you like this blog , please don’t forget to give a clap . if you want to learn more about privacy,security,technology and Linux, consider following me. Plus, whatever I find interesting and valuable.
