@@ -12,14 +12,14 @@ tags:
   - Android
 ---
 
-# 5 Foss That Will  Change Your Life (Android)
 
 ## Why FOSS
 FOSS stands for "Free and Open Source Software" (free as in freedom), The Foss application are **generally**  more privacy-friendly and secure. The good thing  about foss is that you will discover creativity of  developers as their are projects which  great, weird, stupid, and cool.
 
 
 ## Linux Command Library
-![[Pasted image 20220821121007.png]]
+![thumbnail](/img/Project/commandlib1.png)
+
 The Linux Command Library is a FOSS app that shows you all the commands that you need. This Includes Key-bindings for 
 						- Vim
 						- Emacs
@@ -30,15 +30,15 @@ The app currently has **4638** manual pages, **21** basic categories and a bunch
  
 [Github](https://github.com/SimonSchubert/LinuxCommandLibrary) [Fdroid](https://f-droid.org/en/packages/com.inspiredandroid.linuxcommandbibliotheca/)  [Website](https://linuxcommandlibrary.com/)
 
-![Pasted image 20220821120301.png](/img/Project/]) ![[Pasted image 20220821120332.png]]
+![thumbnail](/img/Project/commandlib2.png) ![thumbnail](/img/Project/commandlib3.png)
 
 
 
 ## Shelter
-![[Pasted image 20220821120941.png]]
+![thumbnail](/img/Project/shelter1.png)
 Shelter is a FOSS app that uses "Work Profile" feature of Android to provide an isolated space where you install or clone your apps.
 This is very useful when you have multiple accounts in same profile and want to separate them, or used to compartmentalise apps that does not respect privacy and user data. When you isolate app it cannot access data outside the profile
-![[Pasted image 20220821121259.png]]
+![thumbnail](/img/Project/shelterlast.png)
 [Github](https://github.com/PeterCxy/Shelter) [Fdriod](https://f-droid.org/en/packages/net.typeblog.shelter/)
 ## Newpipe 
 
@@ -49,17 +49,18 @@ This is very useful when you have multiple accounts in same profile and want to 
 - You can Download Videos
 - You can also view your history and create playlists
 There is no data collection form youtube and no algorithm base content which designed to take all your time, plus no youtube shorts the main reason why changed from youtube to newpipe. You can also view contents form Sound-Cloud and Peer-Tube.
-![[Pasted image 20220821142105.png]] ![[Pasted image 20220821142133.png]]
+![thumbnail](/img/Project/newpipehome.png)
+![thumbnail](/img/Project/newpipe.png)
 [Github](https://github.com/TeamNewPipe/NewPipe) [Fdroid](https://f-droid.org/en/packages/org.schabi.newpipe/) 
 
 ## Feeder
 Freeder is an Free and Open Source RSS Feed Reader. Nowadays we don't require a rss feed reader as compared to old days. But I personally find it very useful as don't like to disturbed by notifications or waste time on watching algorithmic curated content. With help of feeder you add youtube channels, podcasts, blogs to it and you can set it refresh whenever you want or you can set that to manual, where it will search for new content and show you.
-![[Pasted image 20220821142734.png]]
+![thumbnail](/img/Project/rss1.png)
 [Github](https://github.com/spacecowboy/Feeder)[Fdroid](https://f-droid.org/en/packages/com.nononsenseapps.feeder/)
 
 ## Spotiflyer
 
 With help of spotiflyer you can download songs, albums and playlists from Spotify, Gaana, Jio Saavn, Youtube Music, SoundCloud. This does not allow the companies to collect data and serve ads to us. This is very useful if you don't want to be online or have to keep also music locally available.
 Spotiflyer is available for Sndroid,Windows, Linux and MacOs.
-![[Pasted image 20220821143326.png]]
+![thumbnail](/img/Project/spotify.png)
  [Github](https://github.com/Shabinder/SpotiFlyer)[Fdroid](https://f-droid.org/en/packages/com.shabinder.spotiflyer/)
