@@ -19,7 +19,7 @@ Experience
 
 I have worked as an intern, for a company called Corpcrush, and my role was a Data Analyst, where we created graphs, models and databases.
 
-[View Certificate](Assets/photo_2021-10-27_11-19-29.jpg)
+[View Certificate](/img/portfolio/photo_2021-10-27_11-19-29.jpg)
 
 ### Database Manager :-
 
@@ -27,7 +27,7 @@ I have worked as an intern, for a company called Corpcrush, and my role was a Da
 
 In this internship I had to manage databases of products and users for company called Medlife, where i got to collaberote with frontend and backend devs.
 
-[View Certificate](Assets/Mish Al Abdullah T-Internship Certificate.pdf)
+[View Certificate](/img/portfolio/MishAlAbdullahT-InternshipCertificate.pdf)
 
 ### Freelancing :-
 
