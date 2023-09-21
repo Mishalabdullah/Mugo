@@ -13,6 +13,20 @@ My name is **Mishal Abdullah**  and I am developer,designer and a writer.
 Experience
 ==========
 
+### A Web3 Based Community Learning platform
+
+![](/img/portfolio/hack.png)
+This is a project me and friends have done during the GTA-Hackathon.The project is about a that platform leverages Web3 technologies and MetaMask for authentication, and it utilizes NFTs to reward users upon achieving course milestones.
+**We Also Won The Hackathon**
+
+[View Prize Certificate](/img/portfolio/prize.png)
+
+### Web3 Developer :- 
+![](/img/portfolio/web3.png)
+In this internship I have worked as a web3 developer, where I have created and deployed smart contracts and integrated with the website plus a lot of backend work.
+
+[Waiting for providing the certificate]()
+
 ### Data Analyst :-
 
 ![](/img/portfolio/CorpCrush-min.png)
