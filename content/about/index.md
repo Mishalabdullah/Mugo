@@ -25,7 +25,7 @@ This is a project me and friends have done during the GTA-Hackathon.The project 
 ![](/img/portfolio/web3.png)
 In this internship I have worked as a web3 developer, where I have created and deployed smart contracts and integrated with the website plus a lot of backend work.
 
-[Waiting for providing the certificate]()
+[View Certificate](/img/portfolio/trizwit_certfcte_Blockchain.pdf)
 
 ### Data Analyst :-
 
