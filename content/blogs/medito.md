@@ -1,24 +1,21 @@
 ---
-title:       "Medito -A Free And Open Source Meditation App"
-subtitle:    "Mental Health"
+title: "Medito -A Free And Open Source Meditation App"
+subtitle: "Mental Health"
 description: "I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use..."
-date:        2022-12-30
-author:     "Mishal Abdullah"
-image : "img/black.png"
-tags:        ["Meditation", "Medito","Mental Health"]
-
+date: 2022-12-30
+author: "Mishal Abdullah"
+tags: ["Meditation", "Medito", "Mental Health"]
 ---
-![thumbnail](/img/Project/medito.png)
+
+![thumbnail](/images/blogs/Project/medito.png)
 
 I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use when you don’t have access to the internet. If you choose, this app also offers background music for your meditation session. However, I like to sit in silence rather than with music playing in the background.It does not request your personal information, nor does it require you to set up an account in order to use the app, like many other Free and Open Source applications do.
 
-
-![thumbnail](/img/Project/medito1.png)
+![thumbnail](/images/blogs/Project/medito1.png)
 
 Despite being open source, it is not lacking in features or aesthetics; it has a fantastic material design and attractive colour schemes. Additionally, this app has numerous targeted meditation sessions for emotions like anger, sadness, tension, or overwhelm.You can download the software through f-droid, which is the proper method for installing open source applications, or from the Google Play Store and Apple Store.
 
-
-![thumbnail](/img/Project/medito2.png)
+![thumbnail](/images/blogs/Project/medito2.png)
 
 ## Who’s Behind Medito?
 
@@ -46,8 +43,6 @@ For your various needs, there are many “packs,” as they like to term them, s
 
 ![thumbnail](/img/medito3.png)
 
-
-
 ## 30 Day Mindfulness Challenge
 
 This is a pack as the name suggest focus on mindfulness over a course of 30 days. At first, there is an introductory read that just gives you a brief understating on how and why and the advantages of meditation. The 30 days Mindfulness Challenge also aims to make meditation a daily a part of your life
@@ -63,6 +58,7 @@ The low mood focuses on the down emotions like sadness, loneliness, self-labelin
 Relationships
 
 This pack is focused on maintaining healthy and happy relationships with the people around us and helps you to build more empathy, kindness and accept how others are.
+
 ## How to start
 
     Download The App
@@ -73,8 +69,8 @@ This pack is focused on maintaining healthy and happy relationships with the peo
 
 I personally use medito as the pomodoro app whenever I am studying. There is pack called Meditative music and I have downloaded the music for 30 min and 60 min and use it. This is not an official feature or the intended way to use medito, and it’s just something I found useful.
 
-### Support The Project 
+### Support The Project
+
 [Donation Page Of Medito](https://meditofoundation.org/donate)\
 [Their Website](https://meditofoundation.org)\
 [Github Page](https://github.com/meditohq/medito-app)
-

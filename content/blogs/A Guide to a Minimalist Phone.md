@@ -4,7 +4,6 @@ title: "The Minimalist Phone - Guide"
 subtitle: "Life Style"
 date: 2022-03-23
 author: "Mishal Abdullah"
-image: "img/black.png"
 URL: "minimalist-phone"
 tags:
   - Applications

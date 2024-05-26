@@ -4,7 +4,6 @@ title: "Gobuster - Finding Hideden Directories"
 subtitle: "Hacking"
 date: 2022-03-27
 author: "Mishal Abdullah"
-image: "img/black.png"
 URL: "gobuster"
 tags:
   - Hacking

@@ -7,10 +7,9 @@ author: Mishal Abdullah
 tags:
   - nextjs
   - javascript
-
 ---
 
-![thumbnail](/img/nextjslink.png)
+![thumbnail](/images/blogs/nextjslink.png)
 In this we are going to learn how to get data from the url of a NEXTjs application.
 In this blogs we will be taking a look at the latest version of nextjs which is version 13,
 it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for managing your packages.
@@ -32,27 +31,26 @@ below i would be showing an emaple of how to use link you can change how ever yo
 
 ```javascript
 <Link
-href="/hello?color=pink"
-className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-target="_blank"
-rel="noopener noreferrer"
+  href="/hello?color=pink"
+  className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+  target="_blank"
+  rel="noopener noreferrer"
 >
-<h2 className={`mb-3 text-2xl font-semibold`}>
-Deploy{" "}
-<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
--&gt;
-</span>
-</h2>
-<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Pink</p>
+  <h2 className={`mb-3 text-2xl font-semibold`}>
+    Deploy{" "}
+    <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+      -&gt;
+    </span>
+  </h2>
+  <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Pink</p>
 </Link>
 ```
 
 I this example do focus on the href part I am giving the value inside the href after the `?` symbol followed by a keyword and the date.
 
-Here we are giving the page address followed by a question, Now this is the  syntax for Link after the question mark you are supposed to use a keyword that you can think of, which is used for accessing the value in an another page then atlast and `=` sign followed by the data which you want to pass 
+Here we are giving the page address followed by a question, Now this is the syntax for Link after the question mark you are supposed to use a keyword that you can think of, which is used for accessing the value in an another page then atlast and `=` sign followed by the data which you want to pass
 
-
-### Accessing The Link 
+### Accessing The Link
 
 Now for accessing the data from another page use need to import `searchParams` from `next/navigation`.
 
@@ -62,27 +60,18 @@ Now for accessing the data from another page use need to import `searchParams` f
 import { useSearchParams } from "next/navigation";
 
 export default function Hello() {
+  const searchParams = useSearchParams();
 
-const searchParams = useSearchParams();
+  const Color = searchParams.get("color");
 
-const Color = searchParams.get("color");
-
-return (
-
-<div>
-
-<div>
-
-<h1>{Color}</h1>
-
-</div>
-
-</div>
-
-);
-
+  return (
+    <div>
+      <div>
+        <h1>{Color}</h1>
+      </div>
+    </div>
+  );
 }
 ```
 
 Now we get the value passed using the `Color` variable.
-
