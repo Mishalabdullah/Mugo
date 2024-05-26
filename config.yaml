@@ -27,11 +27,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
 
 params:
   title: "Hugo Profile"
@@ -239,22 +239,22 @@ params:
           #   url: https://github.com/gurusabarish/HugoProfileV2
 
   footer:
-  #   recentPosts:
-  #     path: "blogs"
-  #     count: 3
-  #     title: Recent Posts
-  #     enable: true
-  #     disableFeaturedImage: false
-  #   socialNetworks:
-  #     github: https://github.com
-  #     linkedin: https://linkedin.com
-  #     twitter: https://twitter.com
-  #     instagram: https://instagram.com
-  #     facebook: https://facebook.com
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    # socialNetworks:
+    #   github: https://github.com
+    #   linkedin: https://linkedin.com
+    #   twitter: https://twitter.com
+    #   instagram: https://instagram.com
+    #   facebook: https://facebook.com
 
   # List pages like blogs and posts
-  # listPages:
-  #   disableFeaturedImage: false
+  listPages:
+    disableFeaturedImage: false
 
   # Single pages like blog and post
   singlePages:
