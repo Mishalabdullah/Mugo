@@ -136,7 +136,7 @@ params:
           url: "/docs/trizwit_certfcte_Blockchain.pdf"
         info:
           enable: true
-          content: Blockchain Developer at Gtech Mulearn.
+          content: Backend Developer at Gtech Mulearn.
         content: |
           I work as a backend developer at [Gtech Mulearn](https://mulearn.org), mainly building the backend of the platform using Django and occasionally doing some frontend work. Sometimes I build things using unfamiliar tech stacks.
 
