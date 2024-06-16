@@ -136,7 +136,7 @@ params:
           url: "/docs/trizwit_certfcte_Blockchain.pdf"
         info:
           enable: true
-          content: Blockchain Developer at Trizwit labs.
+          content: Blockchain Developer at Gtech Mulearn.
         content: |
           I work as a backend developer at [Gtech Mulearn](https://mulearn.org), mainly building the backend of the platform using Django and occasionally doing some frontend work. Sometimes I build things using unfamiliar tech stacks.
 
@@ -172,8 +172,8 @@ params:
     items:
       - title: Beckn Kerala Chapter Lead
         content: I am the lead of the beckn Kerala chapter.Introducing people to beckn teaching them about beckn.
-      - title: Code4Goverment Commnunity Leader (Beckn)
-        content: helping and mentoring students in the C4GT Commnunity regarding the beckn protocol.
+      - title: Code4Goverment Community Leader (Beckn)
+        content: helping and mentoring students in the C4GT Community regarding the beckn protocol.
       - title: Trivial Ideas Winner II
         content: Won the second prize for Creating an AI based image transcriber app.
         url: "https://www.linkedin.com/posts/mishalat_result-of-something-cool-which-i-built-a-activity-7171445440280813569-EoMS?utm_source=share&utm_medium=member_desktop"
