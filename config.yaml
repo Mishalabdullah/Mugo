@@ -103,7 +103,7 @@ params:
   about:
     enable: true
     title: "Whoami"
-    image: "/images/profile_test.png"
+    image: "/images/mishal-top100.jpeg"
     content: |-
       A badass programmer with a passion for Hacking things. Constantly building highly niche tools and working on projects that other developers fear to work. 
 
