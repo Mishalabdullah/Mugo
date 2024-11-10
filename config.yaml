@@ -139,12 +139,11 @@ params:
           enable: true
           content: Senior Product Eigineer at Chi.
         content: |
-          I work as a backend developer at [Chi](https://thechi.app), mainly building the backend of the platform using Django and occasionally doing some frontend work. Sometimes I build things using unfamiliar tech stacks.
+          As a backend developer at [Chi](https://thechi.app), I focus on developing the platform's backend using NestJS and Bull, with occasional frontend tasks. 
 
-          Tech Stack:- Nestjs, Bull, TypeScript, MongoDB, React  
-          - Building the backend of the platform using Nestjs and Bull.
-          - Creating a new feature for the platform.
- 
+          Tech Stack: NestJS, Bull, TypeScript, MongoDB, React  
+          - Developing and maintaining the backend infrastructure with NestJS and Bull.
+          - Implementing new features to enhance the platform's capabilities.
 
       - job: "Backend Developer"
         company: "Gtech Mulearn"
