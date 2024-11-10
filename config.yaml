@@ -34,8 +34,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Mishal Abdullah"
+  description: Developer.Designer.Writer
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -126,10 +126,30 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+
+      - job: "Senior Product Eigineer"
+        company: "Chi"
+        companyUrl: "https://thechi.app"
+        date: "Sep 2024 - present"
+        featuredLink:
+          name: "Certificate"
+          enable: false
+          url: "/docs/trizwit_certfcte_Blockchain.pdf"
+        info:
+          enable: true
+          content: Senior Product Eigineer at Chi.
+        content: |
+          I work as a backend developer at [Chi](https://thechi.app), mainly building the backend of the platform using Django and occasionally doing some frontend work. Sometimes I build things using unfamiliar tech stacks.
+
+          Tech Stack:- Nestjs, Bull, TypeScript, MongoDB, React  
+          - Building the backend of the platform using Nestjs and Bull.
+          - Creating a new feature for the platform.
+ 
+
       - job: "Backend Developer"
         company: "Gtech Mulearn"
         companyUrl: "https://mulearn.org"
-        date: "Sep 2023 - Present"
+        date: "Sep 2023 - Oct 2024"
         featuredLink:
           name: "Certificate"
           enable: false
