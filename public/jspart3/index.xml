@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How To Find HTML Elements Using JavaScript on Mishal Abdullah</title>
-    <link>http://localhost:61908/jspart3/</link>
+    <link>http://localhost:1313/jspart3/</link>
     <description>Recent content in How To Find HTML Elements Using JavaScript on Mishal Abdullah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:61908/jspart3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/jspart3/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

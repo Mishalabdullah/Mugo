@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Medito -A Free And Open Source Meditation App on Mishal Abdullah</title>
-    <link>http://localhost:61908/blogs/medito/</link>
+    <link>http://localhost:1313/blogs/medito/</link>
     <description>Recent content in Medito -A Free And Open Source Meditation App on Mishal Abdullah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:61908/blogs/medito/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blogs/medito/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

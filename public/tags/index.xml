@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mishal Abdullah</title>
-    <link>http://localhost:61908/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Mishal Abdullah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:61908/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Javascript</title>
-      <link>http://localhost:61908/tags/javascript/</link>
+      <link>http://localhost:1313/tags/javascript/</link>
       <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/javascript/</guid>
+      <guid>http://localhost:1313/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Nextjs</title>
-      <link>http://localhost:61908/tags/nextjs/</link>
+      <link>http://localhost:1313/tags/nextjs/</link>
       <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/nextjs/</guid>
+      <guid>http://localhost:1313/tags/nextjs/</guid>
       <description></description>
     </item>
     <item>
       <title>Meditation</title>
-      <link>http://localhost:61908/tags/meditation/</link>
+      <link>http://localhost:1313/tags/meditation/</link>
       <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/meditation/</guid>
+      <guid>http://localhost:1313/tags/meditation/</guid>
       <description></description>
     </item>
     <item>
       <title>Medito</title>
-      <link>http://localhost:61908/tags/medito/</link>
+      <link>http://localhost:1313/tags/medito/</link>
       <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/medito/</guid>
+      <guid>http://localhost:1313/tags/medito/</guid>
       <description></description>
     </item>
     <item>
       <title>Mental Health</title>
-      <link>http://localhost:61908/tags/mental-health/</link>
+      <link>http://localhost:1313/tags/mental-health/</link>
       <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/mental-health/</guid>
+      <guid>http://localhost:1313/tags/mental-health/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>http://localhost:61908/tags/android/</link>
+      <link>http://localhost:1313/tags/android/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/android/</guid>
+      <guid>http://localhost:1313/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Applications</title>
-      <link>http://localhost:61908/tags/applications/</link>
+      <link>http://localhost:1313/tags/applications/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/applications/</guid>
+      <guid>http://localhost:1313/tags/applications/</guid>
       <description></description>
     </item>
     <item>
       <title>FOSS</title>
-      <link>http://localhost:61908/tags/foss/</link>
+      <link>http://localhost:1313/tags/foss/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/foss/</guid>
+      <guid>http://localhost:1313/tags/foss/</guid>
       <description></description>
     </item>
     <item>
       <title>Keyboard</title>
-      <link>http://localhost:61908/tags/keyboard/</link>
+      <link>http://localhost:1313/tags/keyboard/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/keyboard/</guid>
+      <guid>http://localhost:1313/tags/keyboard/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:61908/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Terminal</title>
-      <link>http://localhost:61908/tags/terminal/</link>
+      <link>http://localhost:1313/tags/terminal/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/terminal/</guid>
+      <guid>http://localhost:1313/tags/terminal/</guid>
       <description></description>
     </item>
     <item>
       <title>Hacking</title>
-      <link>http://localhost:61908/tags/hacking/</link>
+      <link>http://localhost:1313/tags/hacking/</link>
       <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/hacking/</guid>
+      <guid>http://localhost:1313/tags/hacking/</guid>
       <description></description>
     </item>
     <item>
       <title>Kali</title>
-      <link>http://localhost:61908/tags/kali/</link>
+      <link>http://localhost:1313/tags/kali/</link>
       <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/kali/</guid>
+      <guid>http://localhost:1313/tags/kali/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>http://localhost:61908/tags/networking/</link>
+      <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/networking/</guid>
+      <guid>http://localhost:1313/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Minimalism</title>
-      <link>http://localhost:61908/tags/minimalism/</link>
+      <link>http://localhost:1313/tags/minimalism/</link>
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/minimalism/</guid>
+      <guid>http://localhost:1313/tags/minimalism/</guid>
       <description></description>
     </item>
     <item>
       <title>Curl</title>
-      <link>http://localhost:61908/tags/curl/</link>
+      <link>http://localhost:1313/tags/curl/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61908/tags/curl/</guid>
+      <guid>http://localhost:1313/tags/curl/</guid>
       <description></description>
     </item>
   </channel>

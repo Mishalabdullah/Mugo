@@ -230,12 +230,12 @@ params:
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Voicetoblogs.com
+      - title: dressme.space
         content: A web app used to create blogs from the user voice input and also works as audio note taking app where all voice recordings are transcribed and stored.
-        image: /images/v2b.png
+        image: /images/dressme.png
         featured:
           name: website
-          link: https://voicetoblogs.com
+          link: https://dressme.space
         badges:
           - "AI"
           - "Nextjs"
