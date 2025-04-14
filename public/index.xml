@@ -64,5 +64,12 @@
       <guid>http://localhost:1313/curl/</guid>
       <description>&lt;h1 id=&#34;what-is-a-curl-command&#34;&gt;What is a curl command&lt;/h1&gt;&#xA;&lt;p&gt;Curl is a command line tool used to transfer data to and from the servers, using the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE).It is available on windows , MacOs and Linux.&#xA;Uses of curl&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;for downloading web images&#xA;for downloading web pages&#xA;for authentication&#xA;SSL connections&#xA;FTP uplaods&#xA;To test the output of an API&#xA;and more&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;&#xA;&lt;p&gt;curl [options][URL..]&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Gallery</title>
+      <link>http://localhost:1313/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/</guid>
+      <description>gallery</description>
+    </item>
   </channel>
 </rss>

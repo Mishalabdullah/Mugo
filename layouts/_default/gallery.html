@@ -1,6 +1,7 @@
 {{ define "head" }}
 <meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
-<!-- <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/list.css" media="all"> -->
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/gallery.css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 {{ end }}
 
 {{ define "title" }}
@@ -8,22 +9,33 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">{{.Title}}</h2>
-    <h6 class="text-center">{{ .Params.description | emojify }}</h6>
-    <div class="row p-4">
-        {{ .Content | emojify }}
-    </div>
-    <div class="card-group p-4">
-        <div class="row justify-content-center">
-            {{ range .Params.galleryImages }}
-            <div class="col-md-4 p-0 m-0">
-                <div class="card p-0 m-0 border-0">
-                    <img class="w-100" height="280px" src="{{ .src }}">
+<div class="container-fluid pt-4" id="gallery-page">
+    <div class="container">
+        <h2 class="text-center pb-4">Photo Gallery</h2>
+        <div class="row g-4">
+            {{ $galleryPath := "gallery" }}
+            {{ $gallery := readDir (printf "static/%s" $galleryPath) }}
+            {{ range $gallery }}
+                {{ if findRE "\\.(jpg|jpeg|png|gif)$" .Name }}
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="gallery-item">
+                        <a href="/{{ $galleryPath }}/{{ .Name }}" data-lightbox="gallery" data-title="{{ .Name }}">
+                            <img src="/{{ $galleryPath }}/{{ .Name }}" alt="{{ .Name }}" class="img-fluid">
+                        </a>
+                    </div>
                 </div>
-            </div>
+                {{ end }}
             {{ end }}
         </div>
     </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'albumLabel': 'Image %1 of %2'
+    });
+</script>
 {{ end }}
