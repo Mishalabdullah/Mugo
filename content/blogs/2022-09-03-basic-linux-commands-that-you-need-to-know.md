@@ -4,6 +4,7 @@ title:      "10 Basic Linux Commands That You Need To Know"
 subtitle:   "Linux Based"
 date:       2022-09-03
 author:     "Mishal Abdullah"
+image: /images/blogs/terminal.png
 URL: "commandline"
 tags:
   - Terminal

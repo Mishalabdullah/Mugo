@@ -4,12 +4,12 @@ subtitle: Javascript,Nextjs13
 description: In this we are going to learn how to get data from the url of a NEXTjs application.In this blogs we will be taking a look at the latest version of nextjs which is version 13,it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for managing your packages.
 date: 2023-09-27
 author: Mishal Abdullah
+image: /images/blogs/nextjslink.png
 tags:
   - nextjs
   - javascript
 ---
 
-![thumbnail](/images/blogs/nextjslink.png)
 In this we are going to learn how to get data from the url of a NEXTjs application.
 In this blogs we will be taking a look at the latest version of nextjs which is version 13,
 it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for managing your packages.

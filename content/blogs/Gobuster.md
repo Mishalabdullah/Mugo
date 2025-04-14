@@ -5,6 +5,7 @@ subtitle: "Hacking"
 date: 2022-03-27
 author: "Mishal Abdullah"
 URL: "gobuster"
+image: /images/blogs/gobuster.png
 tags:
   - Hacking
   - Kali

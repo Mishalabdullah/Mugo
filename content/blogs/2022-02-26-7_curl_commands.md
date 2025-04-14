@@ -4,13 +4,12 @@ title: "7 Curl Commands That Every Developer Should Know!"
 subtitle: "Networking"
 date: 2022-02-24
 author: "Mishal Abdullah"
+image: /images/blogs/curl.png
 URL: "curl"
 tags:
   - curl
   - Networking
 ---
-
-![thumbnail](/images/blogs/curl.png)
 
 # What is a curl command
 

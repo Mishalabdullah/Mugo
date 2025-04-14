@@ -3,13 +3,14 @@ layout: post
 title: "How To Find HTML Elements Using JavaScript"
 subtitle: "JavaScript Tutorial"
 date: 2022-11-04
+image: /images/blogs/jsimage.png
 author: "Mishal Abdullah"
 URL: "jspart3"
 tags:
   - JavaScript
 ---
 
-![thumbnail](/images/blogs/jsimage.png)
+
 There are three ways of finding HTML elements
 
 - document.getElementById()
