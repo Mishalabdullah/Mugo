@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Mishal Abdullah</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>http://localhost:61908/tags/linux/</link>
     <description>Recent content in Linux on Mishal Abdullah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Sep 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61908/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>10 Basic Linux Commands That You Need To Know</title>
-      <link>http://localhost:1313/commandline/</link>
+      <link>http://localhost:61908/commandline/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/commandline/</guid>
+      <guid>http://localhost:61908/commandline/</guid>
       <description>&lt;h1 id=&#34;10-basic-linux-commands-that-you-need-to-know&#34;&gt;10 Basic Linux Commands That You Need To Know&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-cd&#34;&gt;1. cd&lt;/h2&gt;&#xA;&lt;p&gt;The cd command is used for changing directories. cd stands for &amp;ldquo;change the working directory&amp;rdquo;. use can to use to change from one folder to another.&#xA;**Changing Your Directory **&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;You can use cd then, followed by the folder directory you want to change to&#xA;for example:-  &lt;code&gt;cd Downloads&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;If you want to go through multiple directories at a time, instead of using &lt;code&gt;cd Downloads&lt;/code&gt; and then &lt;code&gt;cd Wallpapers&lt;/code&gt;  you can use cd then followed by the directory name then the next directory name separated by a &lt;code&gt;/&lt;/code&gt;&#xA;for example:-  &lt;code&gt;cd Downloads/wallpapers&lt;/code&gt;&#xA;&lt;code&gt;cd home/prinux/Desktop/Todolist&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nextjs on Mishal Abdullah</title>
-    <link>http://localhost:1313/tags/nextjs/</link>
+    <link>http://localhost:61908/tags/nextjs/</link>
     <description>Recent content in Nextjs on Mishal Abdullah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nextjs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61908/tags/nextjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Get Data From URL In NEXTJS 13</title>
-      <link>http://localhost:1313/blogs/getting-data-from-links-in-nextjs13/</link>
+      <link>http://localhost:61908/blogs/getting-data-from-links-in-nextjs13/</link>
       <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/getting-data-from-links-in-nextjs13/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/nextjslink.png&#34; alt=&#34;thumbnail&#34;&gt;&#xA;In this we are going to learn how to get data from the url of a NEXTjs application.&#xA;In this blogs we will be taking a look at the latest version of nextjs which is version 13,&#xA;it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for managing your packages.&lt;/p&gt;&#xA;&lt;h3 id=&#34;creating-a-nextjs-application&#34;&gt;Creating a NEXTjs Application&lt;/h3&gt;&#xA;&lt;p&gt;In NEXTjs 13 for creating an application just run.&lt;/p&gt;</description>
+      <guid>http://localhost:61908/blogs/getting-data-from-links-in-nextjs13/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:61908/images/blogs/nextjslink.png&#34; alt=&#34;thumbnail&#34;&gt;&#xA;In this we are going to learn how to get data from the url of a NEXTjs application.&#xA;In this blogs we will be taking a look at the latest version of nextjs which is version 13,&#xA;it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for managing your packages.&lt;/p&gt;&#xA;&lt;h3 id=&#34;creating-a-nextjs-application&#34;&gt;Creating a NEXTjs Application&lt;/h3&gt;&#xA;&lt;p&gt;In NEXTjs 13 for creating an application just run.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

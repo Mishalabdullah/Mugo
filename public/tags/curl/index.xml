@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Curl on Mishal Abdullah</title>
-    <link>http://localhost:1313/tags/curl/</link>
+    <link>http://localhost:61908/tags/curl/</link>
     <description>Recent content in Curl on Mishal Abdullah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/curl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61908/tags/curl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>7 Curl Commands That Every Developer Should Know!</title>
-      <link>http://localhost:1313/curl/</link>
+      <link>http://localhost:61908/curl/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/curl/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/curl.png&#34; alt=&#34;thumbnail&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-is-a-curl-command&#34;&gt;What is a curl command&lt;/h1&gt;&#xA;&lt;p&gt;Curl is a command line tool used to transfer data to and from the servers, using the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE).It is available on windows , MacOs and Linux.&#xA;Uses of curl&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;for downloading web images&#xA;for downloading web pages&#xA;for authentication&#xA;SSL connections&#xA;FTP uplaods&#xA;To test the output of an API&#xA;and more&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;&#xA;&lt;p&gt;curl [options][URL..]&lt;/p&gt;</description>
+      <guid>http://localhost:61908/curl/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:61908/images/blogs/curl.png&#34; alt=&#34;thumbnail&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-is-a-curl-command&#34;&gt;What is a curl command&lt;/h1&gt;&#xA;&lt;p&gt;Curl is a command line tool used to transfer data to and from the servers, using the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE).It is available on windows , MacOs and Linux.&#xA;Uses of curl&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;for downloading web images&#xA;for downloading web pages&#xA;for authentication&#xA;SSL connections&#xA;FTP uplaods&#xA;To test the output of an API&#xA;and more&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;&#xA;&lt;p&gt;curl [options][URL..]&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
