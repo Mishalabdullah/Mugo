@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medito on Mishal Abdullah</title>
+    <link>http://localhost:1313/tags/medito/</link>
+    <description>Recent content in Medito on Mishal Abdullah</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/medito/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Medito -A Free And Open Source Meditation App</title>
+      <link>http://localhost:1313/blogs/medito/</link>
+      <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/medito/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/Project/medito.png&#34; alt=&#34;thumbnail&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use when you don’t have access to the internet. If you choose, this app also offers background music for your meditation session. However, I like to sit in silence rather than with music playing in the background.It does not request your personal information, nor does it require you to set up an account in order to use the app, like many other Free and Open Source applications do.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

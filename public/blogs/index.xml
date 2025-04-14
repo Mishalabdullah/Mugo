@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Mishal Abdullah</title>
+    <link>http://localhost:1313/blogs/</link>
+    <description>Recent content in Blogs on Mishal Abdullah</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Get Data From URL In NEXTJS 13</title>
+      <link>http://localhost:1313/blogs/getting-data-from-links-in-nextjs13/</link>
+      <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/getting-data-from-links-in-nextjs13/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/nextjslink.png&#34; alt=&#34;thumbnail&#34;&gt;&#xA;In this we are going to learn how to get data from the url of a NEXTjs application.&#xA;In this blogs we will be taking a look at the latest version of nextjs which is version 13,&#xA;it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for managing your packages.&lt;/p&gt;&#xA;&lt;h3 id=&#34;creating-a-nextjs-application&#34;&gt;Creating a NEXTjs Application&lt;/h3&gt;&#xA;&lt;p&gt;In NEXTjs 13 for creating an application just run.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Medito -A Free And Open Source Meditation App</title>
+      <link>http://localhost:1313/blogs/medito/</link>
+      <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/medito/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/Project/medito.png&#34; alt=&#34;thumbnail&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use when you don’t have access to the internet. If you choose, this app also offers background music for your meditation session. However, I like to sit in silence rather than with music playing in the background.It does not request your personal information, nor does it require you to set up an account in order to use the app, like many other Free and Open Source applications do.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How To Find HTML Elements Using JavaScript</title>
+      <link>http://localhost:1313/jspart3/</link>
+      <pubDate>Fri, 04 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/jspart3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/jsimage.png&#34; alt=&#34;thumbnail&#34;&gt;&#xA;There are three ways of finding HTML elements&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;document.getElementById()&lt;/li&gt;&#xA;&lt;li&gt;document.getElementsByTagName()&lt;/li&gt;&#xA;&lt;li&gt;document.getElementsByClassName()&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;element-by-id-&#34;&gt;Element By ID:-&lt;/h2&gt;&#xA;&lt;p&gt;The document.getElementById() method is the most common way to find HTML elements. You can assign a Tag any id you want and pass the the id as a parameter to the document.getElementByid()&#xA;&lt;strong&gt;example&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt; &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;intro&amp;#34;&lt;/span&gt;&amp;gt;Hello World&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;intro&amp;#34;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&#xA;![[Pasted image 20221229153711.png]]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>10 Basic Linux Commands That You Need To Know</title>
+      <link>http://localhost:1313/commandline/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commandline/</guid>
+      <description>&lt;h1 id=&#34;10-basic-linux-commands-that-you-need-to-know&#34;&gt;10 Basic Linux Commands That You Need To Know&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-cd&#34;&gt;1. cd&lt;/h2&gt;&#xA;&lt;p&gt;The cd command is used for changing directories. cd stands for &amp;ldquo;change the working directory&amp;rdquo;. use can to use to change from one folder to another.&#xA;**Changing Your Directory **&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;You can use cd then, followed by the folder directory you want to change to&#xA;for example:-  &lt;code&gt;cd Downloads&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;If you want to go through multiple directories at a time, instead of using &lt;code&gt;cd Downloads&lt;/code&gt; and then &lt;code&gt;cd Wallpapers&lt;/code&gt;  you can use cd then followed by the directory name then the next directory name separated by a &lt;code&gt;/&lt;/code&gt;&#xA;for example:-  &lt;code&gt;cd Downloads/wallpapers&lt;/code&gt;&#xA;&lt;code&gt;cd home/prinux/Desktop/Todolist&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5 Foss That Will  Change Your Life (Android)</title>
+      <link>http://localhost:1313/android-foss-apps/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/android-foss-apps/</guid>
+      <description>&lt;h2 id=&#34;why-foss&#34;&gt;Why FOSS&lt;/h2&gt;&#xA;&lt;p&gt;FOSS stands for &amp;ldquo;Free and Open Source Software&amp;rdquo; (free as in freedom), The Foss application are &lt;strong&gt;generally&lt;/strong&gt; more privacy-friendly and secure. The good thing about foss is that you will discover creativity of developers as their are projects which great, weird, stupid, and cool.&lt;/p&gt;&#xA;&lt;h2 id=&#34;linux-command-library&#34;&gt;Linux Command Library&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/foss-5/commandlib1.png&#34; alt=&#34;thumbnail&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Linux Command Library is a FOSS app that shows you all the commands that you need. This Includes Key-bindings for - Vim - Emacs - Nano - Pico&#xA;This an amazing app as if you forget any specific you can just search in this app and it will provide you with all the results. It Includes almost all the commands which you require to run your Linux System From the basics to the Advanced.&#xA;The app currently has &lt;strong&gt;4638&lt;/strong&gt; manual pages, &lt;strong&gt;21&lt;/strong&gt; basic categories and a bunch of general terminal tips. It works 100% offline, doesn&amp;rsquo;t need an internet connection and has no tracking software.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gobuster - Finding Hideden Directories</title>
+      <link>http://localhost:1313/gobuster/</link>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gobuster/</guid>
+      <description>&lt;h3 id=&#34;how-to-find-hidden-directories-in-webpages&#34;&gt;How To Find Hidden Directories In Web Pages.&lt;/h3&gt;&#xA;&lt;h3 id=&#34;what-is-gobuster&#34;&gt;What is Gobuster ?&lt;/h3&gt;&#xA;&lt;p&gt;Gobuster is a tool and helps us to find directories and files present in a website or a web app.It helps hackers to find the files and directories that are not linked any where is the website. Gobuster is also open-source and it works by sending HTTP requests to the website and enumerating the directory and file names.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Minimalist Phone - Guide</title>
+      <link>http://localhost:1313/minimalist-phone/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/minimalist-phone/</guid>
+      <description>&lt;p&gt;In this guide, we will be learning on how to make your phone a less distractive, and also how to reduce the time that you spend on your phone. You only need to follow a few steps, and it can take less than twenty minutes to make your phone a &amp;ldquo;minimalist&amp;rdquo; one. I came up with the name &amp;ldquo;minimalist phone&amp;rdquo; based on the minimalism philosophy, &amp;ldquo;&lt;strong&gt;saying no to things we don’t like,&lt;/strong&gt;&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Curl Commands That Every Developer Should Know!</title>
+      <link>http://localhost:1313/curl/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/curl/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/curl.png&#34; alt=&#34;thumbnail&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-is-a-curl-command&#34;&gt;What is a curl command&lt;/h1&gt;&#xA;&lt;p&gt;Curl is a command line tool used to transfer data to and from the servers, using the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE).It is available on windows , MacOs and Linux.&#xA;Uses of curl&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;for downloading web images&#xA;for downloading web pages&#xA;for authentication&#xA;SSL connections&#xA;FTP uplaods&#xA;To test the output of an API&#xA;and more&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;&#xA;&lt;p&gt;curl [options][URL..]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
