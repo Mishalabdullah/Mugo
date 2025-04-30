@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="http://localhost:1313/blogs/dokploy-self-hosting/">
+  <meta property="og:site_name" content="Mishal Abdullah">
+  <meta property="og:title" content="Dokploy - Self-Hosted Platform for Web Apps">
+  <meta property="og:description" content="Dokploy is a powerful, self-hosted platform that offers nearly all the features of Vercel, and in some cases, even more.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
+    <meta property="article:published_time" content="2025-04-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-30T00:00:00+00:00">
+    <meta property="article:tag" content="Dokploy">
+    <meta property="article:tag" content="Self-Hosted">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Web Apps">
+    <meta property="article:tag" content="Vercel">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dokploy - Self-Hosted Platform for Web Apps">
+  <meta name="twitter:description" content="Dokploy is a powerful, self-hosted platform that offers nearly all the features of Vercel, and in some cases, even more.">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+<meta name="description" content="Dokploy is a powerful, self-hosted platform that offers nearly all the features of Vercel, and in some cases, even more.">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+  <title>
+Dokploy - Self-Hosted Platform for Web Apps | Mishal Abdullah
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Mishal Abdullah
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            Whoami
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/gallery" title="Blog posts">
+                            
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Dokploy - Self-Hosted Platform for Web Apps</h1>
+            <div class="text-center">
+              Mishal Abdullah 
+              <small>|</small>
+              Apr 30, 2025
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="/images/blogs/dokploy/dokploy.png" alt="Dokploy - Self-Hosted Platform for Web Apps">
+          </div>
+          
+          <article class="page-content  p-2">
+          <h1 id="goodbye-vercel--hello-dokploy">Goodbye Vercel | Hello Dokploy</h1>
+<p>Like many React developers, I’ve always leaned toward <strong>Next.js</strong> as my go-to React-based framework. Thanks to its tight integration with <strong>Vercel</strong>, deploying a Next.js app was as simple as pushing to Git.</p>
+<p>But lately, Vercel has introduced several <strong>limitations</strong> on their free tier:</p>
+<ul>
+<li>Private Git repositories now require a <strong>paid plan</strong></li>
+<li>There’s a <strong>time limit on serverless API routes</strong></li>
+<li>Additional restrictions that make the platform less appealing for indie devs and hobbyists</li>
+</ul>
+<p>To be clear, I don’t blame Vercel — businesses need to make money. But it’s simply <strong>not the path I want to follow</strong>.</p>
+<p>So I began exploring <strong>open-source alternatives</strong>, and that’s when I found <strong>Dokploy</strong> — a powerful, self-hosted platform that offers nearly all the features of Vercel, and in some cases, even more.</p>
+<p>In this post, I’ll walk you through:</p>
+<ul>
+<li>How I use Dokploy to deploy my web apps</li>
+<li>How I host my databases (MongoDB, SQL, PostgreSQL)</li>
+<li>How I self-host services like search engines and RSS readers</li>
+</ul>
+<p><img src="/images/blogs/dokploy/dokploy-home.png" alt="dockploy home"></p>
+<hr>
+<h2 id="-prerequisites">🛠️ Prerequisites</h2>
+<p>To get started with Dokploy, you’ll need access to a <strong>Virtual Private Server (VPS)</strong>. Here are a few providers to choose from:</p>
+<ul>
+<li><a href="https://contabo.com">Contabo</a> <em>(my personal pick — affordable and reliable)</em></li>
+<li><a href="https://www.vultr.com">Vultr</a></li>
+<li><a href="https://www.hetzner.com">Hetzner</a> <em>(I had issues creating an account, but it’s very cost-effective)</em></li>
+<li><a href="https://www.digitalocean.com">DigitalOcean</a></li>
+</ul>
+<p><strong>Minimum recommended VPS specs:</strong></p>
+<ul>
+<li>2GB RAM</li>
+<li>30GB disk space</li>
+</ul>
+<hr>
+<h2 id="-installation">⚙️ Installation</h2>
+<p>The installation process is surprisingly simple.</p>
+<h3 id="-before-you-begin">✅ Before you begin:</h3>
+<p>Ensure the following <strong>ports are open</strong> on your server:</p>
+<ul>
+<li><code>80</code> – HTTP</li>
+<li><code>443</code> – HTTPS</li>
+<li><code>3000</code> – Dokploy Dashboard</li>
+</ul>
+<p>Then, install Dokploy using the one-liner script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -sSL https://dokploy.com/install.sh | sh
+</span></span></code></pre></div><p>You’ll be prompted to <strong>create an admin account</strong>. Be sure to save your credentials securely — this will be your access to the Dokploy dashboard.</p>
+<p><img src="/images/blogs/dokploy/dokploy-signup.png" alt="dokploy-signup"></p>
+<h2 id="-why-i-chose-dokploy">🚀 Why I Chose Dokploy</h2>
+<p>Dokploy offers a wide range of features, but I primarily use it for:</p>
+<ul>
+<li><strong>Deploying Next.js apps</strong> easily with Docker containers</li>
+<li><strong>Hosting MongoDB, MySQL, and PostgreSQL</strong> for personal projects</li>
+<li>Running <strong>self-hosted services</strong> like:
+<ul>
+<li>My own search engine</li>
+<li>Custom RSS reader dashboard</li>
+</ul>
+</li>
+</ul>
+<p>There are tons of other features Dokploy provides — like integrated CI/CD, Git deployments, SSL by default — but honestly, I don’t even use all of them yet.</p>
+<hr>
+<h2 id="-official-setup-documentation">📚 Official Setup Documentation</h2>
+<p>Dokploy supports multiple Linux distributions and popular VPS providers:</p>
+<h3 id="supported-distros">Supported Distros:</h3>
+<ul>
+<li>Ubuntu 24.04 / 22.04 / 20.04 / 18.04</li>
+<li>Debian 12 / 11 / 10</li>
+<li>Fedora 40</li>
+<li>CentOS 8 / 9</li>
+</ul>
+<hr>
+<h2 id="-alternative-dokploy-cloud">🌐 Alternative: Dokploy Cloud</h2>
+<p>Don’t want to manage your own server? Try <a href="https://dokploy.com"><strong>Dokploy Cloud</strong></a> — the hosted version of Dokploy, where you don’t need to worry about installation, updates, or security patches.</p>
+<hr>
+<h2 id="-final-thoughts">🏁 Final Thoughts</h2>
+<p>Dokploy has been a game-changer for me. It gave me full control of my deployments, helped me avoid vendor lock-in, and aligned perfectly with my preference for open-source tooling.</p>
+<p>If you’re looking to break free from platform limitations and embrace self-hosted devops, <strong>Dokploy is worth a shot</strong>.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-prerequisites">🛠️ Prerequisites</a></li>
+    <li><a href="#-installation">⚙️ Installation</a>
+      <ul>
+        <li><a href="#-before-you-begin">✅ Before you begin:</a></li>
+      </ul>
+    </li>
+    <li><a href="#-why-i-chose-dokploy">🚀 Why I Chose Dokploy</a></li>
+    <li><a href="#-official-setup-documentation">📚 Official Setup Documentation</a>
+      <ul>
+        <li><a href="#supported-distros">Supported Distros:</a></li>
+      </ul>
+    </li>
+    <li><a href="#-alternative-dokploy-cloud">🌐 Alternative: Dokploy Cloud</a></li>
+    <li><a href="#-final-thoughts">🏁 Final Thoughts</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/dokploy" target="_blank">Dokploy</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/self-hosted" target="_blank">Self-Hosted</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/docker" target="_blank">Docker</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/web-apps" target="_blank">Web Apps</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/vercel" target="_blank">vercel</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fblogs%2fdokploy-self-hosting%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Dokploy%20-%20Self-Hosted%20Platform%20for%20Web%20Apps&url=http%3a%2f%2flocalhost%3a1313%2fblogs%2fdokploy-self-hosting%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Dokploy%20-%20Self-Hosted%20Platform%20for%20Web%20Apps: http%3a%2f%2flocalhost%3a1313%2fblogs%2fdokploy-self-hosting%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Dokploy%20-%20Self-Hosted%20Platform%20for%20Web%20Apps&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a1313%2fblogs%2fdokploy-self-hosting%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/dokploy-self-hosting/">
+                        <img src="/images/blogs/dokploy/dokploy.png" class="card-img-top" alt="Dokploy - Self-Hosted Platform for Web Apps">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/dokploy-self-hosting/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Dokploy - Self-Hosted Platform for Web Apps">Dokploy - Self-Hosted …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h1 id="goodbye-vercel--hello-dokploy">Goodbye Vercel | Hello Dokploy</h1>
+<p>Like many React developers, I’ve always leaned toward <strong>Next.js</strong> as my go-to React-based framework. Thanks to its tight integration with <strong>Vercel</strong>, deploying a Next.js app was as simple as pushing to Git.</p>
+<p>But lately, Vercel has introduced several <strong>limitations</strong> on their free …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">April 30, 2025</span>
+                    <a href="/blogs/dokploy-self-hosting/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/">
+                        <img src="/images/blogs/nextjslink.png" class="card-img-top" alt="How To Get Data From URL In NEXTJS 13">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="How To Get Data From URL In NEXTJS 13">How To Get Data From URL …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>In this we are going to learn how to get data from the url of a NEXTjs application.
+In this blogs we will be taking a look at the latest version of nextjs which is version 13,
+it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">September 27, 2023</span>
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/medito/">
+                        <img src="/images/blogs/medito/medito.png" class="card-img-top" alt="Medito -A Free And Open Source Meditation App">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/medito/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Medito -A Free And Open Source Meditation App">Medito -A Free And Open …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use when you don’t have access to the internet. If you choose, this app also offers …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">December 30, 2022</span>
+                    <a href="/blogs/medito/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      
+      &copy; 2025  All rights reserved
+    </div>
+  </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

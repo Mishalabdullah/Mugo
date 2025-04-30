@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blogs/</loc>
-    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dokploy/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/dokploy-self-hosting/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/self-hosted/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vercel/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web-apps/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blogs/getting-data-from-links-in-nextjs13/</loc>
     <lastmod>2023-09-27T00:00:00+00:00</lastmod>
@@ -11,13 +35,7 @@
     <loc>http://localhost:1313/tags/javascript/</loc>
     <lastmod>2023-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/nextjs/</loc>
-    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-09-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/meditation/</loc>
@@ -82,6 +100,8 @@
   </url><url>
     <loc>http://localhost:1313/tags/curl/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/hello-world/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

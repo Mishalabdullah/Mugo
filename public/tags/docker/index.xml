@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Mishal Abdullah</title>
+    <link>http://localhost:1313/tags/docker/</link>
+    <description>Recent content in Docker on Mishal Abdullah</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dokploy - Self-Hosted Platform for Web Apps</title>
+      <link>http://localhost:1313/blogs/dokploy-self-hosting/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/dokploy-self-hosting/</guid>
+      <description>&lt;h1 id=&#34;goodbye-vercel--hello-dokploy&#34;&gt;Goodbye Vercel | Hello Dokploy&lt;/h1&gt;&#xA;&lt;p&gt;Like many React developers, I’ve always leaned toward &lt;strong&gt;Next.js&lt;/strong&gt; as my go-to React-based framework. Thanks to its tight integration with &lt;strong&gt;Vercel&lt;/strong&gt;, deploying a Next.js app was as simple as pushing to Git.&lt;/p&gt;&#xA;&lt;p&gt;But lately, Vercel has introduced several &lt;strong&gt;limitations&lt;/strong&gt; on their free tier:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private Git repositories now require a &lt;strong&gt;paid plan&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;There’s a &lt;strong&gt;time limit on serverless API routes&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Additional restrictions that make the platform less appealing for indie devs and hobbyists&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To be clear, I don’t blame Vercel — businesses need to make money. But it’s simply &lt;strong&gt;not the path I want to follow&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

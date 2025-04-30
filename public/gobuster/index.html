@@ -108,9 +108,11 @@
 </style>
 
 
-<meta name="description" content="Gobuster - Finding Hideden Directories of Mishal Abdullah">
-<link rel="stylesheet" href="/css/gallery.css" media="all">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
   <title>
 Gobuster - Finding Hideden Directories | Mishal Abdullah
@@ -299,75 +301,187 @@ Gobuster - Finding Hideden Directories | Mishal Abdullah
     </nav>
 </header>
 <div id="content">
-<div class="container-fluid pt-4" id="gallery-page">
-    <div class="container">
-        <h2 class="text-center pb-4">Photo Gallery</h2>
-        <div class="row g-4">
-            
-            
-            
-                
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="gallery-item">
-                        <a href="/gallery/A%20day%20with%20beckn.jpg" data-lightbox="gallery" data-title="A day with beckn.jpg">
-                            <img src="/gallery/A%20day%20with%20beckn.jpg" alt="A day with beckn.jpg" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-                
-            
-                
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="gallery-item">
-                        <a href="/gallery/DSC07088.jpg" data-lightbox="gallery" data-title="DSC07088.jpg">
-                            <img src="/gallery/DSC07088.jpg" alt="DSC07088.jpg" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-                
-            
-                
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="gallery-item">
-                        <a href="/gallery/DSC07106.jpg" data-lightbox="gallery" data-title="DSC07106.jpg">
-                            <img src="/gallery/DSC07106.jpg" alt="DSC07106.jpg" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-                
-            
-                
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="gallery-item">
-                        <a href="/gallery/GOGOLE1.jpg" data-lightbox="gallery" data-title="GOGOLE1.jpg">
-                            <img src="/gallery/GOGOLE1.jpg" alt="GOGOLE1.jpg" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-                
-            
-                
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="gallery-item">
-                        <a href="/gallery/pramod.jpeg" data-lightbox="gallery" data-title="pramod.jpeg">
-                            <img src="/gallery/pramod.jpeg" alt="pramod.jpeg" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-                
-            
-        </div>
-    </div>
-</div>
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Gobuster - Finding Hideden Directories</h1>
+            <div class="text-center">
+              Mishal Abdullah 
+              <small>|</small>
+              Mar 27, 2022
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="/images/blogs/gobuster.png" alt="Gobuster - Finding Hideden Directories">
+          </div>
+          
+          <article class="page-content  p-2">
+          <h3 id="how-to-find-hidden-directories-in-webpages">How To Find Hidden Directories In Web Pages.</h3>
+<h3 id="what-is-gobuster">What is Gobuster ?</h3>
+<p>Gobuster is a tool and helps us to find directories and files present in a website or a web app.It helps hackers to find the files and directories that are not linked any where is the website. Gobuster is also open-source and it works by sending HTTP requests to the website and enumerating the directory and file names.</p>
+<p>Go buster is written in which makes it fast.Gobuster also has support for extensions with which we can amplify its capabilities. Gobuster also can scale using multiple threads and perform parallel scans to speed up results.</p>
+<h3 id="how-to-install-gobuster">How to install Gobuster ?</h3>
+<p>If you are using Ubuntu or Debian-based OS, you can use <code>apt</code> to install Gobuster.</p>
+<pre tabindex="0"><code>$ apt install gobuster
+</code></pre><p>To install Gobuster on Mac, you can use Homebrew.</p>
+<pre tabindex="0"><code>$ brew install gobuster
+</code></pre><p>To install Gobuster on Windows and other versions of Linux, you can find the <a href="https://github.com/OJ/gobuster">installation instructions here</a>.</p>
+<p>For checking the installlation run the command:-</p>
+<pre tabindex="0"><code>$ gobuster --version
+</code></pre><h3 id="how-to-run-gobuster">How to run Gobuster ?</h3>
+<p>In this guide we will only dicuss about the 2 main flags that are required to run gobuster.</p>
+<ol>
+<li>-u</li>
+</ol>
+<p>The -u flag is used to specify the url that gobuster need to send HTTP request.</p>
+<ol start="2">
+<li>-w</li>
+</ol>
+<p>The -w flag is used for specifying the the word-list path.In case if you don’t know what wordlist is, its a test document whihc contains a lot of words.</p>
+<p><strong>EXAMPLE :-</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gobuster dir -u https://google.com   -w /usr/share/wordlists/dirb/big.txt
+</span></span></code></pre></div><p>If your are using kali linux the wordlists are present in the “usr/share/wordlists” directory. If you want to know the simplest way to install kali linux which is through docker you can find the guide HERE.</p>
+<p>OUTPUT:-</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*mFeSTixB1-zuHSJbl5KJrA.png" alt=""></p>
+<p>Here you can see all the directories of google.com.</p>
+<blockquote>
+<p>If you like this blog , please don’t forget to give a clap . if you want to learn more about privacy,security,technology and Linux, consider following me. Plus, whatever I find interesting and valuable.</p></blockquote>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#how-to-find-hidden-directories-in-webpages">How To Find Hidden Directories In Web Pages.</a></li>
+        <li><a href="#what-is-gobuster">What is Gobuster ?</a></li>
+        <li><a href="#how-to-install-gobuster">How to install Gobuster ?</a></li>
+        <li><a href="#how-to-run-gobuster">How to run Gobuster ?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/hacking" target="_blank">Hacking</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/kali" target="_blank">Kali</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/networking" target="_blank">Networking</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fgobuster%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Gobuster%20-%20Finding%20Hideden%20Directories&url=http%3a%2f%2flocalhost%3a1313%2fgobuster%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Gobuster%20-%20Finding%20Hideden%20Directories: http%3a%2f%2flocalhost%3a1313%2fgobuster%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Gobuster%20-%20Finding%20Hideden%20Directories&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a1313%2fgobuster%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
 <script>
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true,
-        'albumLabel': 'Image %1 of %2'
-    });
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
 </script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
 
   </div><footer>
     
@@ -380,6 +494,32 @@ Gobuster - Finding Hideden Directories | Mishal Abdullah
         Recent Posts
     </div>
     <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/dokploy-self-hosting/">
+                        <img src="/images/blogs/dokploy/dokploy.png" class="card-img-top" alt="Dokploy - Self-Hosted Platform for Web Apps">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/dokploy-self-hosting/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Dokploy - Self-Hosted Platform for Web Apps">Dokploy - Self-Hosted …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h1 id="goodbye-vercel--hello-dokploy">Goodbye Vercel | Hello Dokploy</h1>
+<p>Like many React developers, I’ve always leaned toward <strong>Next.js</strong> as my go-to React-based framework. Thanks to its tight integration with <strong>Vercel</strong>, deploying a Next.js app was as simple as pushing to Git.</p>
+<p>But lately, Vercel has introduced several <strong>limitations</strong> on their free …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">April 30, 2025</span>
+                    <a href="/blogs/dokploy-self-hosting/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
         
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
@@ -427,37 +567,6 @@ it would be different for version 12 and so on. I am assuming you got npm instal
                 <div class="mt-auto card-footer">
                     <span class="float-start">December 30, 2022</span>
                     <a href="/blogs/medito/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/jspart3/">
-                        <img src="/images/blogs/jsimage.png" class="card-img-top" alt="How To Find HTML Elements Using JavaScript">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/jspart3/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="How To Find HTML Elements Using JavaScript">How To Find HTML Elements …</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p><p>There are three ways of finding HTML elements</p>
-<ul>
-<li>document.getElementById()</li>
-<li>document.getElementsByTagName()</li>
-<li>document.getElementsByClassName()</li>
-</ul>
-<h2 id="element-by-id-">Element By ID:-</h2>
-<p>The document.getElementById() method is the most common way to find HTML elements. You can assign a Tag any id you want and pass the the id as a …</p></p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">November 4, 2022</span>
-                    <a href="/jspart3/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>

@@ -6,8 +6,15 @@
     <description>Recent content in Blogs on Mishal Abdullah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dokploy - Self-Hosted Platform for Web Apps</title>
+      <link>http://localhost:1313/blogs/dokploy-self-hosting/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/dokploy-self-hosting/</guid>
+      <description>&lt;h1 id=&#34;goodbye-vercel--hello-dokploy&#34;&gt;Goodbye Vercel | Hello Dokploy&lt;/h1&gt;&#xA;&lt;p&gt;Like many React developers, I’ve always leaned toward &lt;strong&gt;Next.js&lt;/strong&gt; as my go-to React-based framework. Thanks to its tight integration with &lt;strong&gt;Vercel&lt;/strong&gt;, deploying a Next.js app was as simple as pushing to Git.&lt;/p&gt;&#xA;&lt;p&gt;But lately, Vercel has introduced several &lt;strong&gt;limitations&lt;/strong&gt; on their free tier:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private Git repositories now require a &lt;strong&gt;paid plan&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;There’s a &lt;strong&gt;time limit on serverless API routes&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Additional restrictions that make the platform less appealing for indie devs and hobbyists&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To be clear, I don’t blame Vercel — businesses need to make money. But it’s simply &lt;strong&gt;not the path I want to follow&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How To Get Data From URL In NEXTJS 13</title>
       <link>http://localhost:1313/blogs/getting-data-from-links-in-nextjs13/</link>
@@ -63,6 +70,13 @@
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/curl/</guid>
       <description>&lt;h1 id=&#34;what-is-a-curl-command&#34;&gt;What is a curl command&lt;/h1&gt;&#xA;&lt;p&gt;Curl is a command line tool used to transfer data to and from the servers, using the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE).It is available on windows , MacOs and Linux.&#xA;Uses of curl&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;for downloading web images&#xA;for downloading web pages&#xA;for authentication&#xA;SSL connections&#xA;FTP uplaods&#xA;To test the output of an API&#xA;and more&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;&#xA;&lt;p&gt;curl [options][URL..]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blogs/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/hello-world/</guid>
+      <description>&lt;p&gt;Testing Hello World&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

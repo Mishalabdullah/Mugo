@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="http://localhost:1313/tags/vercel/">
+  <meta property="og:site_name" content="Mishal Abdullah">
+  <meta property="og:title" content="Vercel">
+  <meta property="og:description" content="Developer.Designer.Writer">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vercel">
+  <meta name="twitter:description" content="Developer.Designer.Writer">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+<meta name="description" content="Vercel of Mishal Abdullah">
+<link rel="stylesheet" href="/css/list.css" media="all">
+
+  <title>
+Vercel | Mishal Abdullah
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Mishal Abdullah
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            Whoami
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/gallery" title="Blog posts">
+                            
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<div class="container pt-5" id="list-page">
+    <h2 class="text-center pb-2">Vercel</h2>
+    <div class="row">
+        
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/blogs/dokploy-self-hosting/">
+                        <img src="/images/blogs/dokploy/dokploy.png" class="card-img-top" alt="Dokploy - Self-Hosted Platform for Web Apps">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/blogs/dokploy-self-hosting/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Dokploy - Self-Hosted Platform for Web Apps">Dokploy - Self-Hosted Platform for Web Apps</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h1 id="goodbye-vercel--hello-dokploy">Goodbye Vercel | Hello Dokploy</h1>
+<p>Like many React developers, I’ve always leaned toward <strong>Next.js</strong> as my go-to React-based framework. Thanks to its tight integration with <strong>Vercel</strong>, deploying a Next.js app was …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">April 30, 2025</span>
+                    <a href="/blogs/dokploy-self-hosting/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/">
+                        <img src="/images/blogs/nextjslink.png" class="card-img-top" alt="How To Get Data From URL In NEXTJS 13">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="How To Get Data From URL In NEXTJS 13">How To Get Data From URL In NEXTJS 13</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>In this we are going to learn how to get data from the url of a NEXTjs application.
+In this blogs we will be taking a look at the latest version of nextjs which is version 13,
+it would be different …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">September 27, 2023</span>
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/blogs/medito/">
+                        <img src="/images/blogs/medito/medito.png" class="card-img-top" alt="Medito -A Free And Open Source Meditation App">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/blogs/medito/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Medito -A Free And Open Source Meditation App">Medito -A Free And Open Source Meditation App</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">December 30, 2022</span>
+                    <a href="/blogs/medito/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/jspart3/">
+                        <img src="/images/blogs/jsimage.png" class="card-img-top" alt="How To Find HTML Elements Using JavaScript">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/jspart3/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="How To Find HTML Elements Using JavaScript">How To Find HTML Elements Using JavaScript</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>There are three ways of finding HTML elements</p>
+<ul>
+<li>document.getElementById()</li>
+<li>document.getElementsByTagName()</li>
+<li>document.getElementsByClassName()</li>
+</ul>
+<h2 id="element-by-id-">Element By ID:-</h2>
+<p>The document.getElementById() method is the …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">November 4, 2022</span>
+                    <a href="/jspart3/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/commandline/">
+                        <img src="/images/blogs/terminal.png" class="card-img-top" alt="10 Basic Linux Commands That You Need To Know">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/commandline/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="10 Basic Linux Commands That You Need To Know">10 Basic Linux Commands That You Need To Know</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h1 id="10-basic-linux-commands-that-you-need-to-know">10 Basic Linux Commands That You Need To Know</h1>
+<h2 id="1-cd">1. cd</h2>
+<p>The cd command is used for changing directories. cd stands for &ldquo;change the working directory&rdquo;. use can to use to change from one folder …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">September 3, 2022</span>
+                    <a href="/commandline/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/android-foss-apps/">
+                        <img src="/images/blogs/foss-5/commandlib1.png" class="card-img-top" alt="5 Foss That Will  Change Your Life (Android)">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/android-foss-apps/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="5 Foss That Will  Change Your Life (Android)">5 Foss That Will  Change Your Life (Android)</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h2 id="why-foss">Why FOSS</h2>
+<p>FOSS stands for &ldquo;Free and Open Source Software&rdquo; (free as in freedom), The Foss application are <strong>generally</strong> more privacy-friendly and secure. The good thing about foss is that you …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">September 3, 2022</span>
+                    <a href="/android-foss-apps/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/gobuster/">
+                        <img src="/images/blogs/gobuster.png" class="card-img-top" alt="Gobuster - Finding Hideden Directories">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/gobuster/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Gobuster - Finding Hideden Directories">Gobuster - Finding Hideden Directories</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h3 id="how-to-find-hidden-directories-in-webpages">How To Find Hidden Directories In Web Pages.</h3>
+<h3 id="what-is-gobuster">What is Gobuster ?</h3>
+<p>Gobuster is a tool and helps us to find directories and files present in a website or a web app.It helps hackers to find the files and …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">March 27, 2022</span>
+                    <a href="/gobuster/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/minimalist-phone/">
+                        <img src="/images/blogs/phone.png" class="card-img-top" alt="The Minimalist Phone - Guide">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/minimalist-phone/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="The Minimalist Phone - Guide">The Minimalist Phone - Guide</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>In this guide, we will be learning on how to make your phone a less distractive, and also how to reduce the time that you spend on your phone. You only need to follow a few steps, and it can take less …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">March 23, 2022</span>
+                    <a href="/minimalist-phone/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-header p-0">
+                    <a href="/curl/">
+                        <img src="/images/blogs/curl.png" class="card-img-top" alt="7 Curl Commands That Every Developer Should Know!">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/curl/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="7 Curl Commands That Every Developer Should Know!">7 Curl Commands That Every Developer Should Know!</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h1 id="what-is-a-curl-command">What is a curl command</h1>
+<p>Curl is a command line tool used to transfer data to and from the servers, using the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE).It …</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">February 24, 2022</span>
+                    <a href="/curl/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="/blogs/hello-world/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title=""></h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>Testing Hello World</p></p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-3">
+                    <span class="float-start">January 1, 0001</span>
+                    <a href="/blogs/hello-world/" class="float-end btn btn-outline-info btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/dokploy-self-hosting/">
+                        <img src="/images/blogs/dokploy/dokploy.png" class="card-img-top" alt="Dokploy - Self-Hosted Platform for Web Apps">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/dokploy-self-hosting/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Dokploy - Self-Hosted Platform for Web Apps">Dokploy - Self-Hosted …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h1 id="goodbye-vercel--hello-dokploy">Goodbye Vercel | Hello Dokploy</h1>
+<p>Like many React developers, I’ve always leaned toward <strong>Next.js</strong> as my go-to React-based framework. Thanks to its tight integration with <strong>Vercel</strong>, deploying a Next.js app was as simple as pushing to Git.</p>
+<p>But lately, Vercel has introduced several <strong>limitations</strong> on their free …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">April 30, 2025</span>
+                    <a href="/blogs/dokploy-self-hosting/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/">
+                        <img src="/images/blogs/nextjslink.png" class="card-img-top" alt="How To Get Data From URL In NEXTJS 13">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="How To Get Data From URL In NEXTJS 13">How To Get Data From URL …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>In this we are going to learn how to get data from the url of a NEXTjs application.
+In this blogs we will be taking a look at the latest version of nextjs which is version 13,
+it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">September 27, 2023</span>
+                    <a href="/blogs/getting-data-from-links-in-nextjs13/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/medito/">
+                        <img src="/images/blogs/medito/medito.png" class="card-img-top" alt="Medito -A Free And Open Source Meditation App">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/medito/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Medito -A Free And Open Source Meditation App">Medito -A Free And Open …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use when you don’t have access to the internet. If you choose, this app also offers …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">December 30, 2022</span>
+                    <a href="/blogs/medito/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      
+      &copy; 2025  All rights reserved
+    </div>
+  </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
