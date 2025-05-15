@@ -73,7 +73,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Mishal."
-    subtitle: "Indie Hacker und Developer"
+    subtitle: "Indie Hacker and Developer"
     content: "
     1. having extremely favorable qualities.\n
     2. pertaining to a person or thing that is rugged, strong, and/or ready to show these qualities.
@@ -244,12 +244,12 @@ params:
           # - icon: fab fa-github
           #   url: https://github.com/gurusabarish/converter
 
-      - title: brainrag.com
-        content: An AI based note taking app where you cannot view your notes but access your notes though a prompt.
-        image: /images/image.png
+      - title: focusjournal
+        content: An all in productivity app that is designed for maximing your deepwork  with in build smart Analytics.
+        image: /images/focusjournal.png
         featured:
           name: webstie
-          link: https://brainrag.com
+          link: https://focusjourn.al
         badges:
           - "AI"
           - "Nextjs"
