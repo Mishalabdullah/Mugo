@@ -212,16 +212,16 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Beckn Onix GUI
-        content: A GUI made for the beckn-onix installer.This is now part of the main beckn-onix repo
-        image: /images/beckn-gui.png
+      - title: Create AI Models
+        content: Creates AI Models for Clothing  Ecommerce Stores
+        image: /images/createaimodels.png
         featured:
-          name: repo
-          link: https://github.com/beckn/beckn-onix
+          name: website
+          link: https://createaimodels.com
         badges:
           - "Nextjs"
           - "Nodejs"
-          - "Javascript"
+          - "Typescript"
         links:
           # - icon: fa fa-envelope
           #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
@@ -257,6 +257,24 @@ params:
         links:
           # - icon: fab fa-github
           #   url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Beckn Onix GUI
+        content: A GUI made for the beckn-onix installer.This is now part of the main beckn-onix repo
+        image: /images/beckn-gui.png
+        featured:
+          name: repo
+          link: https://github.com/beckn/beckn-onix
+        badges:
+          - "Nextjs"
+          - "Nodejs"
+          - "Javascript"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/Mishalabdullah/beckn-onix-gui/
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
   footer:
     recentPosts:
