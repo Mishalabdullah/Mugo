@@ -14,17 +14,14 @@
         <h2 class="text-center pb-4">Photo Gallery</h2>
         <div class="row g-4">
             {{ $galleryPath := "gallery" }}
-            {{ $gallery := readDir (printf "static/%s" $galleryPath) }}
-            {{ range $gallery }}
-                {{ if findRE "\\.(jpg|jpeg|png|gif)$" .Name }}
+            {{ range .Site.Data.gallery.images }}
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="gallery-item">
-                        <a href="/{{ $galleryPath }}/{{ .Name }}" data-lightbox="gallery" data-title="{{ .Name }}">
-                            <img src="/{{ $galleryPath }}/{{ .Name }}" alt="{{ .Name }}" class="img-fluid">
+                        <a href="/{{ $galleryPath }}/{{ .name }}" data-lightbox="gallery" data-title="{{ .name }}">
+                            <img src="/{{ $galleryPath }}/{{ .name }}" alt="{{ .name }}" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                {{ end }}
             {{ end }}
         </div>
     </div>
