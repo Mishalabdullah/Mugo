@@ -127,11 +127,29 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Software Engineer"
+        company: "Docket AI"
+        companyUrl: "https://docket.io"
+        date: "Feb 2025 - Jan 2026"
+        featuredLink:
+          name: "Certificate"
+          enable: false
+          url: ""
+        info:
+          enable: true
+          content: Senior Engineer at Docket AI.
+        content: |
+          As a backend developer at [Docket AI](https://docket.io), I focused on building Integrations that handled 5k+ requests at a time. Building call data analysis piplines.
 
-      - job: "Senior Product Eigineer"
+          Tech Stack: Python, Kafka, Postgres, FastAPI, Livekit  
+          - Developing and maintaining the backend infrastructure with python and Kafka.
+          - Implementing new Integrations (Sharepoint, Confluence ... ) to enhance the platform's capabilities.
+
+
+      - job: "Senior Software Engineer"
         company: "Chi"
         companyUrl: "https://thechi.app"
-        date: "Sep 2024 - present"
+        date: "Sep 2024 - Feb 2025"
         featuredLink:
           name: "Certificate"
           enable: false
