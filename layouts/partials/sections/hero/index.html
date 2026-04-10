@@ -1,10 +1,31 @@
 {{ if .Site.Params.hero.enable | default false }}
 <section id="hero">
+
+  {{/* ── Scrolling ticker ── */}}
+  <div class="hero-ticker" aria-hidden="true">
+    <div class="hero-ticker-track">
+      {{- range .Site.Params.projects.items -}}
+      <span class="t-item">{{ .title | upper }}</span><span class="t-sep">×</span>
+      {{- end -}}
+      {{- range .Site.Params.experience.items -}}
+      <span class="t-item">{{ .company | upper }}</span><span class="t-sep">×</span>
+      {{- end -}}
+      {{/* duplicate for seamless loop */}}
+      {{- range .Site.Params.projects.items -}}
+      <span class="t-item">{{ .title | upper }}</span><span class="t-sep">×</span>
+      {{- end -}}
+      {{- range .Site.Params.experience.items -}}
+      <span class="t-item">{{ .company | upper }}</span><span class="t-sep">×</span>
+      {{- end -}}
+    </div>
+  </div>
+
+  {{/* ── Main content ── */}}
   <div class="hero-inner">
 
     <p class="hero-eyebrow reveal">{{ .Site.Params.hero.intro }}</p>
 
-    <h1 class="hero-name reveal">{{ .Site.Params.hero.title | upper }}</h1>
+    <h1 class="hero-name reveal" id="hero-name">{{ .Site.Params.hero.title | upper }}</h1>
 
     {{ with .Site.Params.hero.content }}
     <div class="hero-def reveal">

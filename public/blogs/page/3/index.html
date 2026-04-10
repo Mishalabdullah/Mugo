@@ -132,7 +132,6 @@
     hamburger.addEventListener('click', function () {
       navLinks.classList.toggle('open');
     });
-     
     navLinks.addEventListener('click', function (e) {
       if (e.target.tagName === 'A') navLinks.classList.remove('open');
     });
@@ -151,8 +150,40 @@
     }, { threshold: 0.08 });
     reveals.forEach(function (el) { obs.observe(el); });
   } else {
-     
     reveals.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+   
+  var nameEl = document.getElementById('hero-name');
+  if (nameEl) {
+    var CHARS   = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+    var original = nameEl.textContent.trim();
+    var frame    = 0;
+    var speed    = 0.45;  
+    var delay    = 280;   
+
+    setTimeout(function () {
+       
+      nameEl.classList.add('visible');
+
+      var raf;
+      function step() {
+        nameEl.textContent = original.split('').map(function (ch, i) {
+           
+          if (ch === '.' || ch === ' ' || ch === '-') return ch;
+          if (i < Math.floor(frame)) return original[i];
+          return CHARS[Math.floor(Math.random() * CHARS.length)];
+        }).join('');
+
+        frame += speed;
+        if (frame <= original.length) {
+          raf = requestAnimationFrame(step);
+        } else {
+          nameEl.textContent = original;  
+        }
+      }
+      raf = requestAnimationFrame(step);
+    }, delay);
   }
 })();
 </script>

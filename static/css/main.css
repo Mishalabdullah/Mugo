@@ -149,9 +149,54 @@ button { font-family: inherit; }
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-bottom: 68px;
-  padding-top: 120px;
+  padding-top: 80px;
+}
+
+/* Ticker */
+.hero-ticker {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 13px 0;
+  flex-shrink: 0;
+}
+
+.hero-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;
+  width: max-content;
+  animation: ticker-run 28s linear infinite;
+}
+
+.hero-ticker:hover .hero-ticker-track {
+  animation-play-state: paused;
+}
+
+.t-item {
+  font-family: var(--f-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.hero-ticker:hover .t-item { color: var(--text); }
+
+.t-sep {
+  font-family: var(--f-mono);
+  font-size: 0.66rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+@keyframes ticker-run {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 .hero-inner {

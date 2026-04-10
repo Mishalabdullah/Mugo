@@ -17,7 +17,6 @@
     hamburger.addEventListener('click', function () {
       navLinks.classList.toggle('open');
     });
-    /* close on link click */
     navLinks.addEventListener('click', function (e) {
       if (e.target.tagName === 'A') navLinks.classList.remove('open');
     });
@@ -36,8 +35,40 @@
     }, { threshold: 0.08 });
     reveals.forEach(function (el) { obs.observe(el); });
   } else {
-    /* fallback: show everything */
     reveals.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* ── Hero name scramble ── */
+  var nameEl = document.getElementById('hero-name');
+  if (nameEl) {
+    var CHARS   = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+    var original = nameEl.textContent.trim();
+    var frame    = 0;
+    var speed    = 0.45; /* chars resolved per frame */
+    var delay    = 280;  /* ms before starting */
+
+    setTimeout(function () {
+      /* make visible immediately so scramble plays instead of fade */
+      nameEl.classList.add('visible');
+
+      var raf;
+      function step() {
+        nameEl.textContent = original.split('').map(function (ch, i) {
+          /* keep punctuation fixed, resolve left-to-right */
+          if (ch === '.' || ch === ' ' || ch === '-') return ch;
+          if (i < Math.floor(frame)) return original[i];
+          return CHARS[Math.floor(Math.random() * CHARS.length)];
+        }).join('');
+
+        frame += speed;
+        if (frame <= original.length) {
+          raf = requestAnimationFrame(step);
+        } else {
+          nameEl.textContent = original; /* lock final */
+        }
+      }
+      raf = requestAnimationFrame(step);
+    }, delay);
   }
 })();
 </script>
