@@ -230,12 +230,12 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Create AI Models
-        content: Creates AI Models for Clothing  Ecommerce Stores
-        image: /images/createaimodels.png
+      - title: Kryate 
+        content: An AI Native Resume Builder App.
+        image: /images/kryate.png
         featured:
           name: website
-          link: https://createaimodels.com
+          link: https://kryate.com
         badges:
           - "Nextjs"
           - "Nodejs"
