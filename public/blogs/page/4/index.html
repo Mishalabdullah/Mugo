@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Developer.Designer.Writer">
+<link rel="icon" href="/fav.png" type="image/png">
+<meta property="og:url" content="http://localhost:1313/blogs/">
+  <meta property="og:site_name" content="Mishal Abdullah">
+  <meta property="og:title" content="Blogs">
+  <meta property="og:description" content="Developer.Designer.Writer">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blogs">
+  <meta name="twitter:description" content="Developer.Designer.Writer">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/blogs/index.xml">
+<title>Blogs — Mishal Abdullah</title>
+</head>
+<body><nav id="nav">
+  <a href="/" class="nav-brand">MA.</a>
+
+  <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle navigation">
+    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="20" height="2" fill="currentColor"/>
+      <rect y="6" width="20" height="2" fill="currentColor"/>
+      <rect y="12" width="20" height="2" fill="currentColor"/>
+    </svg>
+  </button>
+
+  <ul class="nav-links"><li><a href="/blogs" title="Blog posts">Blog</a></li><li><a href="/gallery" title="Blog posts">Gallery</a></li></ul>
+</nav>
+<main id="content">
+
+<div class="blog-header">
+  <div class="sec-num">Writing</div>
+  <h1 class="sec-title">Blogs</h1>
+</div>
+
+<div class="blog-grid">
+  
+  <a href="/blogs/hello-world/" class="blog-post">
+    <div class="blog-post-date">Jan 0001</div>
+    <div>
+      <h2 class="blog-post-title"></h2>
+      
+      <p class="blog-post-summary">Testing Hello World
+</p>
+      
+    </div>
+  </a>
+  
+</div>
+
+
+<div class="blog-pager">
+  
+  <a class="pager-link" href="/blogs/page/3/">← Prev</a>
+  
+  
+  <a class="pager-link " href="/blogs/">
+    1
+  </a>
+  
+  <a class="pager-link " href="/blogs/page/2/">
+    2
+  </a>
+  
+  <a class="pager-link " href="/blogs/page/3/">
+    3
+  </a>
+  
+  <a class="pager-link active" href="/blogs/page/4/">
+    4
+  </a>
+  
+  
+</div>
+
+
+
+  </main><footer>
+  <span class="foot-copy">
+    &copy; 2026 Mishal Abdullah — All rights reserved.
+  </span>
+  <div class="foot-links"><a href="https://github.com/Mishalabdullah" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://x.com/mishalabdula" target="_blank" rel="noopener noreferrer">Twitter</a><a href="https://www.linkedin.com/in/mishalat/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+</footer>
+<script>
+(function () {
+   
+  var nav = document.getElementById('nav');
+  if (nav) {
+    var onScroll = function () {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+   
+  var hamburger = document.getElementById('nav-hamburger');
+  var navLinks  = document.querySelector('.nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('open');
+    });
+     
+    navLinks.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') navLinks.classList.remove('open');
+    });
+  }
+
+   
+  var reveals = document.querySelectorAll('.reveal');
+  if (reveals.length && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(function (el) { obs.observe(el); });
+  } else {
+     
+    reveals.forEach(function (el) { el.classList.add('visible'); });
+  }
+})();
+</script>
+</body>
+</html>

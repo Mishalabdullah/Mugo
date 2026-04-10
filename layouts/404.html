@@ -1,14 +1,33 @@
-{{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
-{{ end }}
-
-{{ define "title" }}
-{{ .Site.Title }} | {{ .Site.Params.terms.pageNotFound | default "404 page not found" }}
-{{ end }}
+{{ define "title" }}404 — {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-<div class="container py-5 text-center">
-    <img src="{{ .Site.Params.staticPath }}/404.png" alt='{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}' class="img-fluid" width="40%">
-    <h1>{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}</h1>
+<div style="
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 var(--pad);
+">
+  <p style="font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">
+    404
+  </p>
+  <h1 style="font-family: var(--f-disp); font-size: clamp(52px, 10vw, 120px); line-height: 0.9; letter-spacing: 0.02em; color: var(--text); margin-bottom: 24px;">
+    PAGE NOT<br>FOUND
+  </h1>
+  <p style="font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 40px;">
+    This page doesn't exist or was moved.
+  </p>
+  <a href="/" style="
+    font-family: var(--f-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--text);
+    padding: 12px 24px;
+    transition: background 0.2s;
+  ">← Back Home</a>
 </div>
 {{ end }}

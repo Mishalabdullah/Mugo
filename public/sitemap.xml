@@ -2,109 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mishalabdullah.com/blogs/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/dokploy/</loc>
+    <loc>http://localhost:1313/tags/dokploy/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/blogs/dokploy-self-hosting/</loc>
+    <loc>http://localhost:1313/blogs/dokploy-self-hosting/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/self-hosted/</loc>
+    <loc>http://localhost:1313/tags/self-hosted/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/vercel/</loc>
+    <loc>http://localhost:1313/tags/vercel/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/web-apps/</loc>
+    <loc>http://localhost:1313/tags/web-apps/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/blogs/getting-data-from-links-in-nextjs13/</loc>
+    <loc>http://localhost:1313/blogs/getting-data-from-links-in-nextjs13/</loc>
     <lastmod>2023-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/javascript/</loc>
+    <loc>http://localhost:1313/tags/javascript/</loc>
     <lastmod>2023-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/nextjs/</loc>
+    <loc>http://localhost:1313/tags/nextjs/</loc>
     <lastmod>2023-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/meditation/</loc>
+    <loc>http://localhost:1313/tags/meditation/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/medito/</loc>
+    <loc>http://localhost:1313/tags/medito/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/blogs/medito/</loc>
+    <loc>http://localhost:1313/blogs/medito/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/mental-health/</loc>
+    <loc>http://localhost:1313/tags/mental-health/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/jspart3/</loc>
+    <loc>http://localhost:1313/jspart3/</loc>
     <lastmod>2022-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/commandline/</loc>
+    <loc>http://localhost:1313/commandline/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/android-foss-apps/</loc>
+    <loc>http://localhost:1313/android-foss-apps/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/android/</loc>
+    <loc>http://localhost:1313/tags/android/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/applications/</loc>
+    <loc>http://localhost:1313/tags/applications/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/foss/</loc>
+    <loc>http://localhost:1313/tags/foss/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/keyboard/</loc>
+    <loc>http://localhost:1313/tags/keyboard/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/terminal/</loc>
+    <loc>http://localhost:1313/tags/terminal/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/gobuster/</loc>
+    <loc>http://localhost:1313/gobuster/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/hacking/</loc>
+    <loc>http://localhost:1313/tags/hacking/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/kali/</loc>
+    <loc>http://localhost:1313/tags/kali/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/networking/</loc>
+    <loc>http://localhost:1313/tags/networking/</loc>
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/minimalism/</loc>
+    <loc>http://localhost:1313/tags/minimalism/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/minimalist-phone/</loc>
+    <loc>http://localhost:1313/minimalist-phone/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/curl/</loc>
+    <loc>http://localhost:1313/curl/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/tags/curl/</loc>
+    <loc>http://localhost:1313/tags/curl/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mishalabdullah.com/blogs/hello-world/</loc>
+    <loc>http://localhost:1313/blogs/hello-world/</loc>
   </url><url>
-    <loc>https://mishalabdullah.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://mishalabdullah.com/gallery/</loc>
+    <loc>http://localhost:1313/gallery/</loc>
   </url>
 </urlset>

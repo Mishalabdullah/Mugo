@@ -1,49 +1,40 @@
-{{ define "head" }}
-<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/list.css" media="all">
-{{ end }}
-
-{{ define "title" }}
-{{.Title }} | {{ .Site.Title }}
-{{ end }}
+{{ define "title" }}{{ .Title }} — {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">{{.Title}}</h2>
-    <div class="row">
-        {{ $pages := where site.RegularPages "Type" "blogs" }}
-        {{ range $pages }}
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                {{ if .Params.image }}
-                <div class="card-header p-0">
-                    <a href="{{ .RelPermalink }}">
-                        <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">
-                    </a>
-                </div>
-                {{ end }}
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="{{ .RelPermalink }}" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title }}</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>{{ .Summary | truncate 200 }}</p>
-                    </div>
-                </div>
-                <div class="card-footer bg-transparent py-3">
-                    <span class="float-start">{{ .Date.Format "January 2, 2006" }}</span>
-                    <a href="{{ .RelPermalink }}" class="float-end btn btn-outline-info btn-sm">Read More</a>
-                </div>
-            </div>
-        </div>
-        {{ end }}
-    </div>
-    {{ if gt (len $pages) 12 }}
-    <div class="row justify-content-center">
-        <div class="col-auto m-3">
-            {{ template "_internal/pagination.html" . }}
-        </div>
-    </div>
-    {{ end }}
+
+<div class="blog-header">
+  <div class="sec-num">Writing</div>
+  <h1 class="sec-title">{{ .Title }}</h1>
 </div>
+
+<div class="blog-grid">
+  {{ range .Paginator.Pages }}
+  <a href="{{ .RelPermalink }}" class="blog-post">
+    <div class="blog-post-date">{{ .Date.Format "Jan 2006" }}</div>
+    <div>
+      <h2 class="blog-post-title">{{ .Title }}</h2>
+      {{ if .Summary }}
+      <p class="blog-post-summary">{{ .Summary | plainify | truncate 160 }}</p>
+      {{ end }}
+    </div>
+  </a>
+  {{ end }}
+</div>
+
+{{ if gt .Paginator.TotalPages 1 }}
+<div class="blog-pager">
+  {{ if .Paginator.HasPrev }}
+  <a class="pager-link" href="{{ .Paginator.Prev.URL }}">← Prev</a>
+  {{ end }}
+  {{ range .Paginator.Pagers }}
+  <a class="pager-link {{ if eq . $.Paginator }}active{{ end }}" href="{{ .URL }}">
+    {{ .PageNumber }}
+  </a>
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+  <a class="pager-link" href="{{ .Paginator.Next.URL }}">Next →</a>
+  {{ end }}
+</div>
+{{ end }}
+
 {{ end }}

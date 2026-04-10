@@ -1,46 +1,26 @@
 {{ if .Site.Params.achievements.enable | default false }}
-<section id="achievements" class="py-5">
-    <div class="container">
-        <h3 class="text-center">{{ .Site.Params.achievements.title | default "Achievements" }}</h3>
-        <div class="px-0 px-md-5 px-lg-5">
-            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
-                {{ range .Site.Params.achievements.items }}
-                {{ if .url }}
-                <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="{{ .url }}" title="{{ .title }}" target="_blank">
-                        {{if .image }}
-                            <div class="card-head">
-                                <img class="card-img-top" src="{{ .image }}">
-                            </div>
-                        {{ end }}
-                        <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">{{ .title }}</h5>
-                            <div class="card-text secondary-font">
-                                {{ .content }}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                {{ else }}
-                <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3" title="{{ .title }}">
-                        {{if .image }}
-                            <div class="card-head">
-                                <img class="card-img-top" src="{{ .image }}">
-                            </div>
-                        {{ end }}
-                        <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">{{ .title }}</h5>
-                            <div class="card-text secondary-font">
-                                {{ .content }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{ end }}
-                {{ end }}
-            </div>
-        </div>
+<section id="achievements" class="site-section">
+  <div class="wrap">
+
+    <div class="sec-hd reveal">
+      <div class="sec-num">04 — Wins</div>
+      <h2 class="sec-title">{{ .Site.Params.achievements.title | default "Achievements" }}</h2>
     </div>
+
+    <ul class="achiev-list">
+      {{ range .Site.Params.achievements.items }}
+      <li class="achiev-item reveal">
+        <div class="achiev-left">
+          <div class="achiev-title">{{ .title }}</div>
+          <div class="achiev-desc">{{ .content }}</div>
+        </div>
+        {{ if .url }}
+        <a class="achiev-url" href="{{ .url }}" target="_blank" rel="noopener noreferrer">View ↗</a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+
+  </div>
 </section>
 {{ end }}

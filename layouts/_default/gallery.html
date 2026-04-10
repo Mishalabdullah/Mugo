@@ -1,38 +1,26 @@
-{{ define "head" }}
-<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/gallery.css" media="all">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-{{ end }}
-
-{{ define "title" }}
-{{.Title }} | {{ .Site.Title }}
-{{ end }}
+{{ define "title" }}{{ .Title }} — {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-<div class="container-fluid pt-4" id="gallery-page">
-    <div class="container">
-        <h2 class="text-center pb-4">Photo Gallery</h2>
-        <div class="row g-4">
-            {{ $galleryPath := "gallery" }}
-            {{ range .Site.Data.gallery.images }}
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="gallery-item">
-                        <a href="/{{ $galleryPath }}/{{ .name }}" data-lightbox="gallery" data-title="{{ .name }}">
-                            <img src="/{{ $galleryPath }}/{{ .name }}" alt="{{ .name }}" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-            {{ end }}
-        </div>
-    </div>
+
+<div class="blog-header">
+  <div class="sec-num">Visuals</div>
+  <h1 class="sec-title">Gallery</h1>
 </div>
 
+<div class="gallery-wrap wrap">
+  <div class="gallery-grid">
+    {{ range .Site.Data.gallery.images }}
+    <a href="/gallery/{{ .name }}" data-lightbox="photos" data-title="{{ .name }}" class="gallery-cell">
+      <img src="/gallery/{{ .name }}" alt="{{ .name }}" loading="lazy">
+    </a>
+    {{ end }}
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script>
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true,
-        'albumLabel': 'Image %1 of %2'
-    });
+  lightbox.option({ resizeDuration: 200, wrapAround: true, albumLabel: '%1 / %2' });
 </script>
+
 {{ end }}
