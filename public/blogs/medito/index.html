@@ -124,7 +124,7 @@ This is the important part when you are starting out, and you will find out what
   <span class="foot-copy">
     &copy; 2026 Mishal Abdullah — All rights reserved.
   </span>
-  <div class="foot-links"><a href="https://github.com/Mishalabdullah" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://x.com/mishalabdula" target="_blank" rel="noopener noreferrer">Twitter</a><a href="https://www.linkedin.com/in/mishalat/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+  <div class="foot-links"><a href="https://github.com/Mishalabdullah" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://x.com/mishalabdula" target="_blank" rel="noopener noreferrer">Twitter</a><a href="https://www.linkedin.com/in/mishalat/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.youtube.com/@Mishal-Abdullah" target="_blank" rel="noopener noreferrer">Youtube</a></div>
 </footer>
 <script>
 (function () {
@@ -145,7 +145,6 @@ This is the important part when you are starting out, and you will find out what
     hamburger.addEventListener('click', function () {
       navLinks.classList.toggle('open');
     });
-     
     navLinks.addEventListener('click', function (e) {
       if (e.target.tagName === 'A') navLinks.classList.remove('open');
     });
@@ -164,8 +163,40 @@ This is the important part when you are starting out, and you will find out what
     }, { threshold: 0.08 });
     reveals.forEach(function (el) { obs.observe(el); });
   } else {
-     
     reveals.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+   
+  var nameEl = document.getElementById('hero-name');
+  if (nameEl) {
+    var CHARS   = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+    var original = nameEl.textContent.trim();
+    var frame    = 0;
+    var speed    = 0.45;  
+    var delay    = 280;   
+
+    setTimeout(function () {
+       
+      nameEl.classList.add('visible');
+
+      var raf;
+      function step() {
+        nameEl.textContent = original.split('').map(function (ch, i) {
+           
+          if (ch === '.' || ch === ' ' || ch === '-') return ch;
+          if (i < Math.floor(frame)) return original[i];
+          return CHARS[Math.floor(Math.random() * CHARS.length)];
+        }).join('');
+
+        frame += speed;
+        if (frame <= original.length) {
+          raf = requestAnimationFrame(step);
+        } else {
+          nameEl.textContent = original;  
+        }
+      }
+      raf = requestAnimationFrame(step);
+    }, delay);
   }
 })();
 </script>

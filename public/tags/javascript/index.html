@@ -7,14 +7,14 @@
 <link rel="icon" href="/fav.png" type="image/png">
 <meta property="og:url" content="http://localhost:1313/tags/javascript/">
   <meta property="og:site_name" content="Mishal Abdullah">
-  <meta property="og:title" content="JavaScript">
+  <meta property="og:title" content="Javascript">
   <meta property="og:description" content="Developer.Designer.Writer">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="JavaScript">
+  <meta name="twitter:title" content="Javascript">
   <meta name="twitter:description" content="Developer.Designer.Writer">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/tags/javascript/index.xml">
-<title>JavaScript — Mishal Abdullah</title>
+<title>Javascript — Mishal Abdullah</title>
 </head>
 <body><nav id="nav">
   <a href="/" class="nav-brand">MA.</a>
@@ -41,7 +41,7 @@
 
 <div class="blog-header">
   <div class="sec-num">Writing</div>
-  <h1 class="sec-title">JavaScript</h1>
+  <h1 class="sec-title">Javascript</h1>
 </div>
 
 <div class="blog-grid">
@@ -76,7 +76,7 @@ document.getElementById() document.getElementsByTagName() document.getElementsBy
   <span class="foot-copy">
     &copy; 2026 Mishal Abdullah — All rights reserved.
   </span>
-  <div class="foot-links"><a href="https://github.com/Mishalabdullah" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://x.com/mishalabdula" target="_blank" rel="noopener noreferrer">Twitter</a><a href="https://www.linkedin.com/in/mishalat/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+  <div class="foot-links"><a href="https://github.com/Mishalabdullah" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://x.com/mishalabdula" target="_blank" rel="noopener noreferrer">Twitter</a><a href="https://www.linkedin.com/in/mishalat/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.youtube.com/@Mishal-Abdullah" target="_blank" rel="noopener noreferrer">Youtube</a></div>
 </footer>
 <script>
 (function () {
@@ -97,7 +97,6 @@ document.getElementById() document.getElementsByTagName() document.getElementsBy
     hamburger.addEventListener('click', function () {
       navLinks.classList.toggle('open');
     });
-     
     navLinks.addEventListener('click', function (e) {
       if (e.target.tagName === 'A') navLinks.classList.remove('open');
     });
@@ -116,8 +115,40 @@ document.getElementById() document.getElementsByTagName() document.getElementsBy
     }, { threshold: 0.08 });
     reveals.forEach(function (el) { obs.observe(el); });
   } else {
-     
     reveals.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+   
+  var nameEl = document.getElementById('hero-name');
+  if (nameEl) {
+    var CHARS   = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+    var original = nameEl.textContent.trim();
+    var frame    = 0;
+    var speed    = 0.45;  
+    var delay    = 280;   
+
+    setTimeout(function () {
+       
+      nameEl.classList.add('visible');
+
+      var raf;
+      function step() {
+        nameEl.textContent = original.split('').map(function (ch, i) {
+           
+          if (ch === '.' || ch === ' ' || ch === '-') return ch;
+          if (i < Math.floor(frame)) return original[i];
+          return CHARS[Math.floor(Math.random() * CHARS.length)];
+        }).join('');
+
+        frame += speed;
+        if (frame <= original.length) {
+          raf = requestAnimationFrame(step);
+        } else {
+          nameEl.textContent = original;  
+        }
+      }
+      raf = requestAnimationFrame(step);
+    }, delay);
   }
 })();
 </script>

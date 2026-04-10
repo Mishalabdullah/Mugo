@@ -96,6 +96,8 @@ params:
           url: https://x.com/mishalabdula
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/mishalat/
+        - icon: fab fa-youtube
+          url: https://www.youtube.com/@Mishal-Abdullah
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"
