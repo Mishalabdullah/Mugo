@@ -978,7 +978,14 @@ footer {
     grid-template-columns: 40px 1fr;
   }
 
-  .proj-links { display: none; }
+  .proj-links {
+    grid-column: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-top: 0;
+  }
 
   .contact-grid {
     grid-template-columns: 1fr;
