@@ -227,6 +227,39 @@ params:
         url: "https://www.linkedin.com/posts/mulearn_app-activity-7133794569283895296-aMXi?utm_source=share&utm_medium=member_desktop"
         # image: /images/achievment.jpg
 
+  opensource:
+    enable: true
+    title: "Open Source"
+    items:
+      - name: "Portkey"
+        role: "Contributor"
+        content: "Contributed to Portkey, the AI gateway for production LLM apps."
+        url: "https://github.com/Portkey-AI/gateway"
+        tags:
+          - "AI"
+          - "TypeScript"
+      - name: "Beckn Protocol"
+        role: "Kerala Chapter Lead & Contributor"
+        content: "Core contributor to the Beckn open commerce protocol. Built beckn-onix GUI — now merged into the main repo."
+        url: "https://github.com/beckn"
+        tags:
+          - "Open Commerce"
+          - "JavaScript"
+      - name: "Free Software Community of India"
+        role: "Contributor"
+        content: "Active member and contributor to FSCI, promoting free and open-source software across India."
+        url: "https://fsci.in"
+        tags:
+          - "FOSS"
+          - "Community"
+      - name: "OpenStreetMap Kerala"
+        role: "Contributor"
+        content: "Built the official website for OpenStreetMap Kerala."
+        url: "https://kerala.openstreetmap.in/"
+        tags:
+          - "GIS"
+          - "Mapping"
+
   # projects
   projects:
     enable: true

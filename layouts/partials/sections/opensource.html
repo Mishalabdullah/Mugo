@@ -1,0 +1,35 @@
+{{ if .Site.Params.opensource.enable | default false }}
+<section id="opensource" class="site-section">
+  <div class="wrap">
+
+    <div class="sec-hd reveal">
+      <div class="sec-num">05 — Open Source</div>
+      <h2 class="sec-title">{{ .Site.Params.opensource.title | default "Open Source" }}</h2>
+    </div>
+
+    <ul class="oss-list">
+      {{ range .Site.Params.opensource.items }}
+      <li class="oss-item reveal">
+        <div class="oss-left">
+          {{ if .url }}
+          <a class="oss-name" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }} ↗</a>
+          {{ else }}
+          <div class="oss-name">{{ .name }}</div>
+          {{ end }}
+          {{ if .role }}<div class="oss-role">{{ .role }}</div>{{ end }}
+          {{ if .content }}<div class="oss-desc">{{ .content | markdownify }}</div>{{ end }}
+        </div>
+        {{ if .tags }}
+        <div class="oss-tags">
+          {{ range .tags }}
+          <span class="oss-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+
+  </div>
+</section>
+{{ end }}

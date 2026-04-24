@@ -599,6 +599,71 @@ button { font-family: inherit; }
 }
 .achiev-url:hover { color: var(--accent); }
 
+/* ── OPEN SOURCE ───────────────────────────────────── */
+.oss-list {}
+
+.oss-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.oss-item:first-child { border-top: 1px solid var(--border); }
+
+.oss-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 4px;
+  transition: color 0.2s;
+}
+
+a.oss-name:hover { color: var(--accent); }
+
+.oss-role {
+  font-family: var(--f-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.oss-desc {
+  font-size: 0.84rem;
+  color: var(--muted);
+  max-width: 540px;
+  line-height: 1.65;
+}
+
+.oss-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.oss-tag {
+  font-family: var(--f-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .oss-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
 /* ── CONTACT ───────────────────────────────────────── */
 #contact {
   padding: 100px 0;
