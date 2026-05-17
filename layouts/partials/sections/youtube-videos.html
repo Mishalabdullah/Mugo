@@ -7,11 +7,7 @@
 
     {{ if and $cfg.autoImport.enable $cfg.autoImport.channelId }}
       {{ $feedURL := printf "https://www.youtube.com/feeds/videos.xml?channel_id=%s" $cfg.autoImport.channelId }}
-      {{ with try (resources.GetRemote $feedURL) }}
-        {{ with .Err }}
-          {{ warnf "YouTube feed fetch failed: %s" . }}
-        {{ end }}
-        {{ with .Value }}
+      {{ with resources.GetRemote $feedURL }}
           {{ $feed := . | transform.Unmarshal (dict "format" "xml") }}
           {{ $entries := slice }}
           {{ with index $feed "entry" }}
@@ -39,7 +35,6 @@
               {{ $videos = $videos | append (dict "title" $videoTitle "videoUrl" $watch "thumbnailUrl" $thumb) }}
             {{ end }}
           {{ end }}
-        {{ end }}
       {{ end }}
     {{ end }}
 
