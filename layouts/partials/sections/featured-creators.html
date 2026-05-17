@@ -1,0 +1,28 @@
+{{ if .Site.Params.featuredByCreators.enable | default false }}
+<section id="featured-creators" class="site-section">
+  <div class="wrap">
+
+    <div class="sec-hd reveal">
+      <div class="sec-num">02 — Featured</div>
+      <h2 class="sec-title">{{ .Site.Params.featuredByCreators.title | default "Featured by Creators" }}</h2>
+    </div>
+
+    <div class="featured-card reveal">
+      <a class="featured-thumb" href="{{ .Site.Params.featuredByCreators.videoUrl }}" target="_blank" rel="noopener noreferrer" aria-label="Watch featured video on YouTube">
+        <img src="{{ .Site.Params.featuredByCreators.thumbnailUrl | default "https://i3.ytimg.com/vi/pwbFuq47CqA/hqdefault.jpg" }}" alt="Featured by creators thumbnail" loading="lazy">
+        <span class="featured-play">▶</span>
+      </a>
+
+      <div class="featured-copy">
+        {{ if .Site.Params.featuredByCreators.label }}
+        <p class="featured-label">{{ .Site.Params.featuredByCreators.label }}</p>
+        {{ end }}
+        {{ if .Site.Params.featuredByCreators.videoUrl }}
+        <a class="featured-link" href="{{ .Site.Params.featuredByCreators.videoUrl }}" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

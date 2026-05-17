@@ -124,6 +124,25 @@ params:
         - "Django"
         - "tailwind"
 
+  featuredByCreators:
+    enable: true
+    title: "Featured by Creators"
+    label: "A creator featured me in this YouTube Short"
+    videoUrl: "https://www.youtube.com/shorts/pwbFuq47CqA"
+    thumbnailUrl: "https://i3.ytimg.com/vi/pwbFuq47CqA/hqdefault.jpg"
+
+  youtubeVideos:
+    enable: true
+    title: "My YouTube Videos"
+    channelUrl: "https://www.youtube.com/@Mishal-Abdullah/videos"
+    limit: 8
+    autoImport:
+      enable: true
+      channelId: "UCaZ29euYiOtGImfDcJ_C-Gw"
+    items:
+      - title: "Latest upload"
+        videoUrl: "https://www.youtube.com/shorts/pwbFuq47CqA"
+        thumbnailUrl: "https://i3.ytimg.com/vi/pwbFuq47CqA/hqdefault.jpg"
 
   experience:
     enable: true
