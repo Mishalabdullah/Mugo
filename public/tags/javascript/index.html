@@ -7,14 +7,14 @@
 <link rel="icon" href="/fav.png" type="image/png">
 <meta property="og:url" content="https://mishalabdullah.com/tags/javascript/">
   <meta property="og:site_name" content="Mishal Abdullah">
-  <meta property="og:title" content="JavaScript">
+  <meta property="og:title" content="Javascript">
   <meta property="og:description" content="Developer.Designer.Writer">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="JavaScript">
+  <meta name="twitter:title" content="Javascript">
   <meta name="twitter:description" content="Developer.Designer.Writer">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="alternate" type="application/rss&#43;xml" href="https://mishalabdullah.com/tags/javascript/index.xml">
-<title>JavaScript — Mishal Abdullah</title>
+<title>Javascript — Mishal Abdullah</title>
 </head>
 <body><nav id="nav">
   <a href="/" class="nav-brand">MA.</a>
@@ -41,7 +41,7 @@
 
 <div class="blog-header">
   <div class="sec-num">Writing</div>
-  <h1 class="sec-title">JavaScript</h1>
+  <h1 class="sec-title">Javascript</h1>
 </div>
 
 <div class="blog-grid">
@@ -149,6 +149,52 @@ document.getElementById() document.getElementsByTagName() document.getElementsBy
       }
       raf = requestAnimationFrame(step);
     }, delay);
+  }
+
+   
+  var ytScroll = document.getElementById('yt-scroll');
+  if (ytScroll && ytScroll.dataset.autoImport === 'true' && ytScroll.dataset.channelId) {
+    var channelId = ytScroll.dataset.channelId;
+    var limit = parseInt(ytScroll.dataset.limit || '8', 10);
+    var rssUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=' + encodeURIComponent(channelId);
+    var apiUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssUrl);
+
+    var esc = function (str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    };
+
+    fetch(apiUrl)
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        if (!data || !Array.isArray(data.items) || !data.items.length) return;
+
+        var items = data.items.slice(0, limit);
+        var html = items.map(function (item) {
+          var title = esc(item.title || 'Latest upload');
+          var videoUrl = esc(item.link || '#');
+          var thumb = esc(item.thumbnail || '');
+          if (!thumb || videoUrl === '#') return '';
+
+          return [
+            '<article class="yt-card">',
+            '  <a class="yt-thumb" href="' + videoUrl + '" target="_blank" rel="noopener noreferrer" aria-label="Watch ' + title + ' on YouTube">',
+            '    <img src="' + thumb + '" alt="' + title + ' thumbnail" loading="lazy">',
+            '    <span class="yt-play">▶</span>',
+            '  </a>',
+            '  <a class="yt-title" href="' + videoUrl + '" target="_blank" rel="noopener noreferrer">' + title + ' ↗</a>',
+            '</article>'
+          ].join('');
+        }).join('');
+
+        if (html.trim()) ytScroll.innerHTML = html;
+      })
+      .catch(function () {
+      });
   }
 })();
 </script>

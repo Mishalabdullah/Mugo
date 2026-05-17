@@ -3,53 +3,20 @@
   <div class="wrap">
     {{ $cfg := .Site.Params.youtubeVideos }}
     {{ $limit := $cfg.limit | default 8 }}
-    {{ $videos := slice }}
-
-    {{ if and $cfg.autoImport.enable $cfg.autoImport.channelId }}
-      {{ $feedURL := printf "https://www.youtube.com/feeds/videos.xml?channel_id=%s" $cfg.autoImport.channelId }}
-      {{ with resources.GetRemote $feedURL }}
-          {{ $feed := . | transform.Unmarshal (dict "format" "xml") }}
-          {{ $entries := slice }}
-          {{ with index $feed "entry" }}
-            {{ $entries = . }}
-          {{ else }}
-            {{ with index $feed "feed" }}
-              {{ with index . "entry" }}
-                {{ $entries = . }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
-          {{ range first $limit $entries }}
-            {{ $videoID := index . "yt:videoId" }}
-            {{ if not $videoID }}{{ $videoID = index . "videoId" }}{{ end }}
-            {{ if not $videoID }}
-              {{ with index . "id" }}
-                {{ $videoID = replace . "yt:video:" "" }}
-              {{ end }}
-            {{ end }}
-            {{ $videoTitle := index . "title" }}
-            {{ if not $videoTitle }}{{ $videoTitle = "Latest upload" }}{{ end }}
-            {{ if $videoID }}
-              {{ $thumb := printf "https://i3.ytimg.com/vi/%s/hqdefault.jpg" $videoID }}
-              {{ $watch := printf "https://www.youtube.com/watch?v=%s" $videoID }}
-              {{ $videos = $videos | append (dict "title" $videoTitle "videoUrl" $watch "thumbnailUrl" $thumb) }}
-            {{ end }}
-          {{ end }}
-      {{ end }}
-    {{ end }}
-
-    {{ if and (eq (len $videos) 0) $cfg.items }}
-      {{ $videos = $cfg.items }}
-    {{ end }}
 
     <div class="sec-hd reveal">
       <div class="sec-num">03 — YouTube</div>
       <h2 class="sec-title">{{ $cfg.title | default "My YouTube Videos" }}</h2>
     </div>
 
-    {{ if $videos }}
-    <div class="yt-scroll reveal">
-      {{ range $videos }}
+    <div
+      id="yt-scroll"
+      class="yt-scroll reveal"
+      data-auto-import="{{ if and $cfg.autoImport.enable $cfg.autoImport.channelId }}true{{ else }}false{{ end }}"
+      data-channel-id="{{ $cfg.autoImport.channelId }}"
+      data-limit="{{ $limit }}"
+    >
+      {{ range $cfg.items }}
       <article class="yt-card">
         <a class="yt-thumb" href="{{ .videoUrl }}" target="_blank" rel="noopener noreferrer" aria-label="Watch {{ .title }} on YouTube">
           <img src="{{ .thumbnailUrl }}" alt="{{ .title }} thumbnail" loading="lazy">
@@ -63,7 +30,6 @@
       </article>
       {{ end }}
     </div>
-    {{ end }}
 
     {{ if $cfg.channelUrl }}
     <a class="yt-channel-link reveal" href="{{ $cfg.channelUrl }}" target="_blank" rel="noopener noreferrer">View all videos on YouTube ↗</a>
