@@ -11,7 +11,7 @@ tags:
   - Networking
 ---
 
-# What is a curl command
+## What is a curl command
 
 Curl is a command line tool used to transfer data to and from the servers, using the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE).It is available on windows , MacOs and Linux.
 Uses of curl

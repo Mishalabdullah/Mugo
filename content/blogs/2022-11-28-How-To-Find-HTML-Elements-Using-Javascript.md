@@ -37,7 +37,7 @@ The document.getElementById() method is the most common way to find HTML element
 ```
 
 **Output**
-![[Pasted image 20221229153711.png]]
+The heading in this example is displayed in red.
 
 ## Element By Tag Name
 

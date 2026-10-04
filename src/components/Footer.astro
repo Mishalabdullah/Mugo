@@ -1,0 +1,7 @@
+---
+import { socials } from '../data/site';
+---
+<footer class="container footer">
+  <div class="footer-top"><div><a class="wordmark" href="/">mishal<span>.</span></a><p>Building things. Sharing what I learn.<br />A little corner of the internet.</p></div><div class="footer-links">{socials.map(s => <a href={s.url}>{s.name} ↗</a>)}<a href="/rss.xml">RSS feed ↗</a></div></div>
+  <div class="footer-bottom"><span>© {new Date().getFullYear()} Mishal Abdullah</span><span>Made with curiosity & Astro.</span><a href="#top">Back to top ↑</a></div>
+</footer>

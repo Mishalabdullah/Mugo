@@ -13,7 +13,7 @@ tags:
 ---
 
 
-# 10 Basic Linux Commands That You Need To Know
+## 10 Basic Linux Commands That You Need To Know
 ## 1. cd 
 The cd command is used for changing directories. cd stands for "change the working directory". use can to use to change from one folder to another.
 **Changing Your Directory **

@@ -1,0 +1,9 @@
+---
+import { render } from 'astro:content';
+import { getPosts } from '../lib/posts';
+import BlogPost from '../layouts/BlogPost.astro';
+export async function getStaticPaths() { return (await getPosts()).filter(post => post.data.URL).map(post => ({ params: { legacy: post.data.URL!.replace(/^\/+|\/+$/g, '') }, props: { post } })); }
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+---
+<BlogPost post={post} headings={headings}><Content /></BlogPost>

@@ -8,7 +8,7 @@ author: "Mishal Abdullah"
 tags: ["Dokploy", "Self-Hosted", "Docker", "Web Apps", "vercel"]
 ---
 
-# Goodbye Vercel | Hello Dokploy
+## Goodbye Vercel | Hello Dokploy
 
 Like many React developers, I’ve always leaned toward **Next.js** as my go-to React-based framework. Thanks to its tight integration with **Vercel**, deploying a Next.js app was as simple as pushing to Git.
 

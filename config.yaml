@@ -74,10 +74,9 @@ params:
     intro: "Hi, my name is"
     title: "Mishal."
     subtitle: "Indie Hacker and Developer"
-    content: "
-    1. having extremely favorable qualities.\n
-    2. pertaining to a person or thing that is rugged, strong, and/or ready to show these qualities.
-"
+    content: |-
+      1. having extremely favorable qualities.
+      2. pertaining to a person or thing that is rugged, strong, and/or ready to show these qualities.
     image: /images/mishal-beckn.jpeg
     bottomImage:
       enable: true
@@ -286,7 +285,7 @@ params:
     items:
       - title: Kryate 
         content: An AI Native Resume Builder App.
-        image: /images/kryate.png
+        image: /images/kryate.svg
         featured:
           name: website
           link: https://kryate.com

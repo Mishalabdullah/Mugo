@@ -1,0 +1,5 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { socials } from '../data/site';
+---
+<SiteLayout title="Let’s connect" description="Connect with Mishal Abdullah to talk software, AI products, open source, and collaboration."><section class="container page-heading"><p class="eyebrow">SAY HELLO</p><h1>Good conversations.<br />Interesting possibilities<span class="accent">.</span></h1><p>Want to collaborate, talk about an idea, or just say hi? Find me here.</p></section><section class="container resource-grid section">{socials.map(s => <a class="resource-card" href={s.url}><p class="eyebrow">LET’S CONNECT ON</p><h2>{s.name} ↗</h2></a>)}</section></SiteLayout>
