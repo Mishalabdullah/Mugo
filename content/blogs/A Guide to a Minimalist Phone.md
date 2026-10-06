@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Minimalist Phone - Guide"
+description: "Turn your Android phone into a less distracting tool with a simple minimalist setup, fewer apps, and more intentional habits."
 subtitle: "Life Style"
 date: 2022-03-23
 author: "Mishal Abdullah"

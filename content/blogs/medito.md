@@ -1,7 +1,7 @@
 ---
 title: "Medito -A Free And Open Source Meditation App"
 subtitle: "Mental Health"
-description: "I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use..."
+description: "Explore Medito, a free and open-source meditation app with beginner lessons, offline sessions, and a 30-day mindfulness challenge."
 date: 2022-12-30
 image: /images/blogs/medito/medito.png
 author: "Mishal Abdullah"
@@ -11,11 +11,11 @@ tags: ["Meditation", "Medito", "Mental Health"]
 
 I’ve been using Medito, a fantastic meditation software, for the past few weeks, and it’s been excellent. The app includes lessons that teach you how to meditate, and you can download a meditation session to use when you don’t have access to the internet. If you choose, this app also offers background music for your meditation session. However, I like to sit in silence rather than with music playing in the background.It does not request your personal information, nor does it require you to set up an account in order to use the app, like many other Free and Open Source applications do.
 
-![thumbnail](/images/blogs/medito/medito1.png)
+![Medito meditation app home screen](../../static/images/blogs/medito/medito1.png)
 
 Despite being open source, it is not lacking in features or aesthetics; it has a fantastic material design and attractive colour schemes. Additionally, this app has numerous targeted meditation sessions for emotions like anger, sadness, tension, or overwhelm.You can download the software through f-droid, which is the proper method for installing open source applications, or from the Google Play Store and Apple Store.
 
-![thumbnail](/images/blogs/medito/medito2.png)
+![Meditation lessons and sessions in Medito](../../static/images/blogs/medito/medito2.png)
 
 ## Who’s Behind Medito?
 
@@ -41,7 +41,7 @@ There are about nine courses/steps inside the app that provide you the guide on 
 
 For your various needs, there are many “packs,” as they like to term them, such as Mindfulness, Anger Management, etc. Every pack practices meditation in a unique way, and each one has a particular focus (breathing, environment, or thoughts).I’ve listed a few packs below that I truly like and use frequently.
 
-![thumbnail](/images/blogs/medito/medito3.png)
+![Medito meditation packs for different situations](../../static/images/blogs/medito/medito3.png)
 
 ## 30 Day Mindfulness Challenge
 

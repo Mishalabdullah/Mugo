@@ -2,6 +2,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 import { readdirSync, readFileSync } from 'node:fs';
+import staticSeo from './src/lib/static-seo.mjs';
 
 const legacyAliases = readdirSync('./content/blogs').filter(name => /\.mdx?$/.test(name))
   .filter(name => /^URL:/m.test(readFileSync(`./content/blogs/${name}`, 'utf8')))
@@ -11,7 +12,8 @@ export default defineConfig({
   site: 'https://mishalabdullah.com',
   publicDir: './static',
   trailingSlash: 'always',
-  integrations: [mdx(), sitemap({ filter: (page) => !page.includes('/404') && !page.includes('/blog/') && !legacyAliases.includes(new URL(page).pathname) })],
+  integrations: [mdx(), sitemap({ filter: (page) => !page.includes('/404') && !page.includes('/blog/') && !legacyAliases.includes(new URL(page).pathname) }), staticSeo()],
+  image: { layout: 'constrained' },
   markdown: { shikiConfig: { theme: 'github-dark' } },
   redirects: { '/blog': '/blogs/' },
 });

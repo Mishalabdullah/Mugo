@@ -1,10 +1,16 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
+import { galleryCaptions } from '../data/gallery';
 const images = import.meta.glob<{ default: import('astro').ImageMetadata }>('../../static/gallery/*.{jpg,jpeg,png}', { eager: true });
-const photos = Object.entries(images).map(([path, image]) => ({ image: image.default, title: path.split('/').pop()!.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ') }));
+const photos = await Promise.all(Object.entries(images).map(async ([path, image], index) => {
+  const filename = path.split('/').pop()!;
+  const title = galleryCaptions[filename] || (/^(DSC|IMG_)/.test(filename) ? `Photo journal — moment ${index + 1}` : filename.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '));
+  const full = await getImage({ src: image.default, width: Math.min(1600, image.default.width), format: 'webp', quality: 85, layout: 'none' });
+  return { image: image.default, title, full: full.src };
+}));
 ---
-<SiteLayout title="Gallery" description="A photo journal of Mishal Abdullah’s community events, friends, adventures, and life beyond the code."><section class="container page-heading"><p class="eyebrow">LIFE BEYOND THE EDITOR</p><h1>The in-between moments<span class="accent">.</span></h1><p>People, places, and a few memories from along the way.</p></section><section class="container gallery section">{photos.map((p, i) => <a href={p.image.src} class="gallery-item" data-caption={p.title}><Image src={p.image} alt={p.title.startsWith('DSC') || p.title === 'GOGOLE1' ? 'A moment from Mishal’s community photo journal' : p.title} widths={[400, 800]} sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" width={800} loading="lazy" /><span>{String(i + 1).padStart(2, '0')} ↗</span></a>)}</section><dialog id="lightbox" aria-label="Photo viewer"><button type="button" aria-label="Close photo viewer">Close ✕</button><img alt="" /><p></p></dialog></SiteLayout>
+<SiteLayout title="Gallery" description="A photo journal of Mishal Abdullah’s community events, friends, adventures, and life beyond the code."><section class="container page-heading"><p class="eyebrow">LIFE BEYOND THE EDITOR</p><h1>The in-between moments<span class="accent">.</span></h1><p>People, places, and a few memories from along the way.</p></section><section class="container gallery section">{photos.map((p, i) => <a href={p.full} class="gallery-item" data-caption={p.title}><Image src={p.image} alt={p.title} widths={[400, 800]} sizes="(max-width: 480px) calc(100vw - 40px), (max-width: 750px) calc((100vw - 62px) / 2), (max-width: 1260px) calc((100vw - 124px) / 3), 379px" width={Math.min(800, p.image.width)} loading="lazy" /><span>{String(i + 1).padStart(2, '0')} ↗</span></a>)}</section><dialog id="lightbox" aria-label="Photo viewer"><button type="button" aria-label="Close photo viewer">Close ✕</button><img alt="" /><p></p></dialog></SiteLayout>
 <script>
 const dialog = document.querySelector<HTMLDialogElement>('#lightbox')!;
 document.querySelectorAll<HTMLAnchorElement>('.gallery-item').forEach(link => link.addEventListener('click', event => { event.preventDefault(); const img = dialog.querySelector('img')!; img.src = link.href; img.alt = link.querySelector('img')!.alt; dialog.querySelector('p')!.textContent = link.dataset.caption!; dialog.showModal(); }));

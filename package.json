@@ -6,6 +6,10 @@
     "node": ">=22.12.0"
   },
   "scripts": {
+    "prepare:media": "node scripts/prepare-media.mjs",
+    "predev": "npm run prepare:media",
+    "prebuild": "npm run prepare:media",
+    "precheck": "npm run prepare:media",
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",

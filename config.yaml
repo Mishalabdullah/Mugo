@@ -77,7 +77,7 @@ params:
     content: |-
       1. having extremely favorable qualities.
       2. pertaining to a person or thing that is rugged, strong, and/or ready to show these qualities.
-    image: /images/mishal-beckn.jpeg
+    image: /gallery/kph-talk.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false

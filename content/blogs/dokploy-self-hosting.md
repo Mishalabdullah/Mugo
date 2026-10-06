@@ -1,7 +1,7 @@
 ---
 title: "Dokploy - Self-Hosted Platform for Web Apps"
 subtitle: "Dockerised Web Apps and Self-Hosted Services"
-description: "Dokploy is a powerful, self-hosted platform that offers nearly all the features of Vercel, and in some cases, even more."
+description: "Learn how to install Dokploy on a VPS and deploy Dockerized web apps with a self-hosted alternative to managed deployment platforms."
 date: 2025-04-30
 image: /images/blogs/dokploy/dokploy.png
 author: "Mishal Abdullah"
@@ -28,7 +28,7 @@ In this post, I’ll walk you through:
 - How I host my databases (MongoDB, SQL, PostgreSQL)
 - How I self-host services like search engines and RSS readers
 
-![dockploy home](/images/blogs/dokploy/dokploy-home.png)
+![Dokploy dashboard for managing self-hosted applications](../../static/images/blogs/dokploy/dokploy-home.png)
 
 ---
 
@@ -68,7 +68,7 @@ curl -sSL https://dokploy.com/install.sh | sh
 
 You’ll be prompted to **create an admin account**. Be sure to save your credentials securely — this will be your access to the Dokploy dashboard.
 
-![dokploy-signup](/images/blogs/dokploy/dokploy-signup.png)
+![Dokploy administrator account setup screen](../../static/images/blogs/dokploy/dokploy-signup.png)
 
 ## 🚀 Why I Chose Dokploy
 

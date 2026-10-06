@@ -1,7 +1,7 @@
 ---
 title: How To Get Data From URL In NEXTJS 13
 subtitle: Javascript,Nextjs13
-description: In this we are going to learn how to get data from the url of a NEXTjs application.In this blogs we will be taking a look at the latest version of nextjs which is version 13,it would be different for version 12 and so on. I am assuming you got npm installed or something similar to that for managing your packages.
+description: "Learn how to pass and read URL query parameters in Next.js 13 using links and the App Router."
 date: 2023-09-27
 author: Mishal Abdullah
 image: /images/blogs/nextjslink.png

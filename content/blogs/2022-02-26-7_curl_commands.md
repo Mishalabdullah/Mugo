@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "7 Curl Commands That Every Developer Should Know!"
+description: "Explore useful curl commands for making HTTP requests, inspecting headers, downloading files, and working with APIs from your terminal."
 subtitle: "Networking"
 date: 2022-02-24
 author: "Mishal Abdullah"

@@ -1,10 +1,11 @@
 ---
 import { type Post, postUrl, dateLabel, readingTime, description } from '../lib/posts';
+import OptimizedImage from './OptimizedImage.astro';
 interface Props { post: Post; }
 const { post } = Astro.props;
 ---
 <article class="post-card" data-search={`${post.data.title} ${post.data.tags.join(' ')} ${description(post)}`.toLowerCase()} data-tags={JSON.stringify(post.data.tags)}>
-  <a class="post-image" href={postUrl(post)} tabindex="-1" aria-hidden="true">{post.data.image && <img src={post.data.image} alt="" width="640" height="400" loading="lazy" decoding="async" />}<span class="image-arrow">↗</span></a>
+  <a class="post-image" href={postUrl(post)} tabindex="-1" aria-hidden="true">{post.data.image && <OptimizedImage src={post.data.image} alt="" width={800} widths={[400, 640, 800]} sizes="(max-width: 480px) calc(100vw - 40px), (max-width: 750px) calc((100vw - 60px) / 2), (max-width: 1260px) calc((100vw - 140px) / 3), 374px" />}<span class="image-arrow">↗</span></a>
   <div class="meta"><span>{post.data.tags[0] || 'Notes'}</span><span>{readingTime(post)} min read</span></div>
   <h3><a href={postUrl(post)}>{post.data.title}</a></h3><p>{description(post)}</p><time datetime={post.data.date.toISOString()}>{dateLabel(post.data.date)}</time>
 </article>

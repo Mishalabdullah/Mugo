@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How To Find HTML Elements Using JavaScript"
+description: "Learn how to find HTML elements in JavaScript by ID, tag name, and class name, with practical DOM examples."
 subtitle: "JavaScript Tutorial"
 date: 2022-11-04
 image: /images/blogs/jsimage.png

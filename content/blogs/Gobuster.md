@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Gobuster - Finding Hideden Directories"
+description: "A practical introduction to Gobuster and wordlists for discovering directories during authorized website security testing."
 subtitle: "Hacking"
 date: 2022-03-27
 author: "Mishal Abdullah"
