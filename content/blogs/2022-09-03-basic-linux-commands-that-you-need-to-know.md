@@ -1,6 +1,7 @@
 ---
 layout:     post 
 title:      "10 Basic Linux Commands That You Need To Know"
+description: "Learn ten essential Linux terminal commands for navigating directories, working with files, and getting comfortable with the command line."
 subtitle:   "Linux Based"
 date:       2022-09-03
 author:     "Mishal Abdullah"
@@ -13,7 +14,7 @@ tags:
 ---
 
 
-# 10 Basic Linux Commands That You Need To Know
+## 10 Basic Linux Commands That You Need To Know
 ## 1. cd 
 The cd command is used for changing directories. cd stands for "change the working directory". use can to use to change from one folder to another.
 **Changing Your Directory **

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "5 Foss That Will  Change Your Life (Android)"
+description: "Discover five free and open-source Android apps for Linux commands, app isolation, videos, RSS feeds, and offline music."
 subtitle: "FOSS Application"
 date: 2022-09-03
 author: "Mishal Abdullah"
@@ -18,7 +19,7 @@ FOSS stands for "Free and Open Source Software" (free as in freedom), The Foss a
 
 ## Linux Command Library
 
-![thumbnail](/images/blogs/foss-5/commandlib1.png)
+![Linux Command Library app on Android](../../static/images/blogs/foss-5/commandlib1.png)
 
 The Linux Command Library is a FOSS app that shows you all the commands that you need. This Includes Key-bindings for - Vim - Emacs - Nano - Pico
 This an amazing app as if you forget any specific you can just search in this app and it will provide you with all the results. It Includes almost all the commands which you require to run your Linux System From the basics to the Advanced.
@@ -28,14 +29,14 @@ The app currently has **4638** manual pages, **21** basic categories and a bunch
 - [Fdroid](https://f-droid.org/en/packages/com.inspiredandroid.linuxcommandbibliotheca/)
 - [Website](https://linuxcommandlibrary.com/)
 
-![thumbnail](/images/blogs/foss-5/commandlib2.png) ![thumbnail](/images/blogs/foss-5/commandlib3.png)
+![Linux Command Library command categories](../../static/images/blogs/foss-5/commandlib2.png) ![Linux Command Library command reference](../../static/images/blogs/foss-5/commandlib3.png)
 
 ## Shelter
 
-![thumbnail](/images/blogs/foss-5/shelter1.png)
+![Shelter app for managing an isolated Android work profile](../../static/images/blogs/foss-5/shelter1.png)
 Shelter is a FOSS app that uses "Work Profile" feature of Android to provide an isolated space where you install or clone your apps.
 This is very useful when you have multiple accounts in same profile and want to separate them, or used to compartmentalise apps that does not respect privacy and user data. When you isolate app it cannot access data outside the profile
-![thumbnail](/images/blogs/foss-5/shelterlast.png)
+![Shelter work profile apps on Android](../../static/images/blogs/foss-5/shelterlast.png)
 
 - [Github](https://github.com/PeterCxy/Shelter)
 - [Fdriod](https://f-droid.org/en/packages/net.typeblog.shelter/)
@@ -50,8 +51,8 @@ You can say Newpipe is a youtube client, but there's more to it. Newpipe doed no
 - You can also view your history and create playlists
   There is no data collection form youtube and no algorithm base content which designed to take all your time, plus no youtube shorts the main reason why changed from youtube to newpipe. You can also view contents form Sound-Cloud and Peer-Tube.
 
-  ![thumbnail](/images/blogs/foss-5/newpipehome.png)
-  ![thumbnail](/images/blogs/foss-5/newpipe.png)
+  ![NewPipe video browsing screen](../../static/images/blogs/foss-5/newpipehome.png)
+  ![NewPipe video player on Android](../../static/images/blogs/foss-5/newpipe.png)
 
   - [Github](https://github.com/TeamNewPipe/NewPipe)
   - [Fdroid](https://f-droid.org/en/packages/org.schabi.newpipe/)
@@ -59,7 +60,7 @@ You can say Newpipe is a youtube client, but there's more to it. Newpipe doed no
 ## Feeder
 
 Freeder is an Free and Open Source RSS Feed Reader. Nowadays we don't require a rss feed reader as compared to old days. But I personally find it very useful as don't like to disturbed by notifications or waste time on watching algorithmic curated content. With help of feeder you add youtube channels, podcasts, blogs to it and you can set it refresh whenever you want or you can set that to manual, where it will search for new content and show you.
-![thumbnail](/images/blogs/foss-5/rss1.png)
+![Feeder RSS reader on Android](../../static/images/blogs/foss-5/rss1.png)
 
 - [Github](https://github.com/spacecowboy/Feeder)
 - [Fdroid](https://f-droid.org/en/packages/com.nononsenseapps.feeder/)
@@ -68,7 +69,7 @@ Freeder is an Free and Open Source RSS Feed Reader. Nowadays we don't require a 
 
 With help of spotiflyer you can download songs, albums and playlists from Spotify, Gaana, Jio Saavn, Youtube Music, SoundCloud. This does not allow the companies to collect data and serve ads to us. This is very useful if you don't want to be online or have to keep also music locally available.
 Spotiflyer is available for Sndroid,Windows, Linux and MacOs.
-![thumbnail](/images/blogs/foss-5/spotify.png)
+![SpotiFlyer music downloader interface](../../static/images/blogs/foss-5/spotify.png)
 
 - [Github](https://github.com/Shabinder/SpotiFlyer)
 - [Fdroid](https://f-droid.org/en/packages/com.shabinder.spotiflyer/)

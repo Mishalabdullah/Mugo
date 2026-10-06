@@ -1,0 +1,8 @@
+---
+const links = [['About', '/about/'], ['Articles', '/blogs/'], ['Projects', '/projects/'], ['Gallery', '/gallery/']];
+---
+<header class="header container">
+  <a class="wordmark" href="/" aria-label="Mishal Abdullah home">mishal<span>.</span></a>
+  <nav aria-label="Main navigation">{links.map(([label, href]) => <a href={href} aria-current={Astro.url.pathname.startsWith(href) ? 'page' : undefined}>{label}</a>)}</nav>
+  <a class="header-cta" href="/contact/">Let’s connect <span aria-hidden="true">↗</span></a>
+</header>

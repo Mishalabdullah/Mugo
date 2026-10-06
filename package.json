@@ -1,0 +1,35 @@
+{
+  "name": "mishal-abdullah-website",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "prepare:media": "node scripts/prepare-media.mjs",
+    "predev": "npm run prepare:media",
+    "prebuild": "npm run prepare:media",
+    "precheck": "npm run prepare:media",
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "verify": "node scripts/verify-build.mjs",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^8.0.2",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.5",
+    "sharp": "^0.35.0",
+    "yaml": "^2.9.1"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
+}

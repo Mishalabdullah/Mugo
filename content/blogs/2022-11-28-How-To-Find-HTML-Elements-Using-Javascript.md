@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How To Find HTML Elements Using JavaScript"
+description: "Learn how to find HTML elements in JavaScript by ID, tag name, and class name, with practical DOM examples."
 subtitle: "JavaScript Tutorial"
 date: 2022-11-04
 image: /images/blogs/jsimage.png
@@ -37,7 +38,7 @@ The document.getElementById() method is the most common way to find HTML element
 ```
 
 **Output**
-![[Pasted image 20221229153711.png]]
+The heading in this example is displayed in red.
 
 ## Element By Tag Name
 
