@@ -18,6 +18,18 @@ npm run verify
 
 Deploy the generated `dist/` directory to your static hosting provider. The canonical domain is configured in `astro.config.mjs` as `https://mishalabdullah.com`.
 
+## GitHub Pages deployment
+
+The workflow in `.github/workflows/deploy.yml` builds Astro using Node 24, runs type and production-output checks, uploads `dist/`, and deploys it to GitHub Pages. It builds pushes to `version2` and `feature/astro` and pull requests targeting `version2`; only `version2` deploys to the live site.
+
+In **GitHub → repository Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. “Deploy from a branch” invokes Jekyll, which cannot build Astro and interprets `.astro` scripts as invalid YAML. Push/merge the workflow to `version2`, or use its “Run workflow” button on that branch, to deploy.
+
+Set **Custom domain** to **`mishalabdullah.com`**, point your domain’s DNS to GitHub Pages, and enable **Enforce HTTPS**. `static/CNAME` preserves the custom domain in the deployed output. This site uses root-relative URLs for that domain; it is not configured for the repository subpath `mishalabdullah.github.io/Mugo/`.
+
+`static/.nojekyll` is included in `dist/` so static deployment does not process the output with Jekyll. It does not replace the Astro build workflow: publishing the raw source branch will not produce a working site.
+
+GitHub Pages does **not** process `_redirects` or `_headers`; on Pages, migration aliases use the generated HTML redirects and caching is controlled by GitHub. The generated rules are available if you later deploy to a host that supports them. GitHub Pages serves the custom `404.html` for missing URLs.
+
 ## Publishing articles
 
 Add a `.md` or `.mdx` file to `content/blogs/`:
