@@ -66,6 +66,8 @@ assert.equal((rss.match(/<item>/g) || []).length, published, 'All published arti
 assert.ok(!rss.includes('Hello World'), 'Draft excluded');
 await access('dist/sitemap-index.xml');
 await access('dist/robots.txt');
+await access('dist/.nojekyll');
+assert.equal((await readFile('dist/CNAME', 'utf8')).trim(), 'mishalabdullah.com', 'GitHub Pages custom domain retained');
 const sitemap = await readFile('dist/sitemap-0.xml', 'utf8');
 const indexed = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]);
 assert.deepEqual(new Set(indexed), canonicalPages, 'Sitemap contains canonical content pages only');
