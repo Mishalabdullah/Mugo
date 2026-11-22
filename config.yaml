@@ -165,7 +165,6 @@ params:
           - Developing and maintaining the backend infrastructure with python and Kafka.
           - Implementing new Integrations (Sharepoint, Confluence ... ) to enhance the platform's capabilities.
 
-
       - job: "Senior Software Engineer"
         company: "Chi"
         companyUrl: "https://thechi.app"
@@ -202,9 +201,6 @@ params:
           - Covering tech news in a event called Faya Port 80.
           - Helping to run events and workshops.
 
-
-
-
       - job: "Blockchain Developer"
         company: "Trizwit Labs"
         companyUrl: "https://trizwit.com/"
@@ -222,7 +218,6 @@ params:
           Tech Stack:- JavaScript, Tailwind, Nextjs, Solidity, Wagmi, MongoDB
           - Created the frontend and backend of the DAPP using Nextjs and Tailwind.
           - Create the smart contract using Solidity and deployed it on the Mumbai testnet.
-
 
   achievements:
     enable: true
@@ -283,7 +278,7 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Kryate 
+      - title: Kryate
         content: An AI Native Resume Builder App.
         image: /images/kryate.svg
         featured:
@@ -297,7 +292,7 @@ params:
           # - icon: fa fa-envelope
           #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           # - icon: fab fa-github
-            # url: https://github.com/Mishalabdullah/beckn-onix-gui/
+          # url: https://github.com/Mishalabdullah/beckn-onix-gui/
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
@@ -315,16 +310,18 @@ params:
           # - icon: fab fa-github
           #   url: https://github.com/gurusabarish/converter
 
-      - title: focusjournal
-        content: An all in productivity app that is designed for maximing your deepwork  with in build smart Analytics.
+      - title: Openreview.si
+        content: Opensource Code Review Agent
         image: /images/focusjournal.png
         featured:
           name: webstie
-          link: https://focusjourn.al
+          link: https://openreview.si
         badges:
           - "AI"
-          - "Nextjs"
-          - "Javascript"
+          - "rust"
+          - "astro"
+          - "vite"
+
         links:
           # - icon: fab fa-github
           #   url: https://github.com/gurusabarish/HugoProfileV2
